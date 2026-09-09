@@ -1,9 +1,8 @@
-name: 自动拉取上游汉化并构建推送 Docker 镜像
+name: Dockhand 多架构分阶段构建与发布
 
 on:
   push:
-    branches:
-      - main
+    branches: [ main ]
     paths:
       - '规则/**'
       - '脚本/**'
@@ -12,159 +11,154 @@ on:
   workflow_dispatch:
     inputs:
       upstream_tag:
-        description: '指定上游发布版本 Tag (留空则默认拉取上游最新 Release)'
+        description: '上游版本 Tag (留空则默认拉取官方最新 Release)'
         required: false
         default: ''
-      platform:
-        description: '构建目标平台架构 (可选: all / amd64 / arm64)'
-        required: false
-        default: 'amd64'
-      push_image:
-        description: '是否推送镜像到 Docker Hub'
-        type: boolean
-        default: true
 
 jobs:
-  # 阶段一：拉取上游源码并执行非侵入式汉化流水线
+  # =========================================================================
+  # 阶段一：拉取上游源码 -> 执行汉化 -> 在宿主机原生极速编译前端 (彻底免除容器内 OOM)
+  # =========================================================================
   prepare:
+    name: 阶段一：汉化与云端宿主机预编译
     runs-on: ubuntu-latest
-    outputs:
-      tag: ${{ steps.upstream.outputs.tag }}
-      version: ${{ steps.upstream.outputs.version }}
     steps:
-      - name: 1. 检出汉化流水线仓库
+      - name: 1. 检出流水线仓库
         uses: actions/checkout@v4
 
-      - name: 2. 初始化 Node.js 运行环境
+      - name: 2. 安装 Node.js 24 运行环境
         uses: actions/setup-node@v4
         with:
           node-version: 24
           cache: 'npm'
 
-      - name: 3. 安装流水线依赖
-        run: npm ci || npm install
+      - name: 3. 安装流水线工具依赖
+        run: npm install
 
-      - name: 4. 获取上游 Release 版本并克隆源码
-        id: upstream
+      - name: 4. 获取上游 Release 源码
         run: |
-          if [ -n "${{ github.event.inputs.upstream_tag }}" ]; then
-            TAG="${{ github.event.inputs.upstream_tag }}"
-          else
-            TAG=$(curl -sL https://api.github.com/repos/Finsys/dockhand/releases/latest | jq -r '.tag_name // empty')
-            if [ -z "$TAG" ] || [ "$TAG" = "null" ]; then
-              TAG="v1.0.46"
-            fi
+          TAG="${{ github.event.inputs.upstream_tag }}"
+          if [ -z "$TAG" ]; then
+            TAG=$(curl -sL https://api.github.com/repos/Finsys/dockhand/releases/latest | jq -r '.tag_name // "v1.0.46"')
           fi
-          echo "tag=$TAG" >> $GITHUB_OUTPUT
-          CLEAN_VER="${TAG#v}"
-          echo "version=$CLEAN_VER" >> $GITHUB_OUTPUT
-          echo "🚀 目标上游版本: $TAG (纯版本号: $CLEAN_VER)"
-
+          echo "🚀 目标上游版本: $TAG"
           git clone --depth 1 --branch "$TAG" https://github.com/Finsys/dockhand.git 代码
 
-      - name: 5. 执行汉化流水线 (生成 output 产物)
+      - name: 5. 执行汉化流水线 (写入 output)
         run: npm run apply
 
-      - name: 6. 在 output 目录生成锁定文件
+      - name: 6. 在云端宿主机安装依赖并执行编译 (享受原生 7GB 内存与 x86 极速，彻底免除容器内 OOM)
         run: |
           cd output
-          npm install --package-lock-only --ignore-scripts
+          npm install
+          npm run build
+          # 仅在 CI 环境中放行预编译产物传入 Docker，并跳过容器内二次构建
+          sed -i '/^build\/$/d' .dockerignore
+          sed -i 's/RUN npm run build/RUN if [ -f "build\/index.js" ]; then echo "--> [CI] 复用预编译产物"; else npm run build; fi/' Dockerfile
+          # 清理宿主机的 node_modules，保持 artifact 轻量 (仅 ~25MB)，容器构建时会按各架构自行组装
+          rm -rf node_modules
 
-      - name: 7. 打包缓存汉化产物
+      - name: 7. 归档上传已完成汉化与编译的产物
         uses: actions/upload-artifact@v4
         with:
-          name: localized-output
+          name: localized-build-output
           path: output/
           retention-days: 1
 
-  # 阶段二：分架构独立执行构建 (每个架构独占独立虚拟机与全额内存，彻底规避 OOM)
-  build:
+  # =========================================================================
+  # 阶段二：构建 linux/amd64 镜像 (直接复用阶段一的 build/，跳过前端编译)
+  # =========================================================================
+  build-amd64:
+    name: 阶段二：组装并推送 amd64 镜像
     needs: prepare
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        # 当输入选择 amd64 时仅跑 amd64，选择 arm64 时仅跑 arm64，选择 all 或代码 push 时跑全部
-        platform: >-
-          ${{
-            (github.event.inputs.platform == 'amd64' && fromJSON('["linux/amd64"]')) ||
-            (github.event.inputs.platform == 'arm64' && fromJSON('["linux/arm64"]')) ||
-            fromJSON('["linux/amd64", "linux/arm64"]')
-          }}
     steps:
-      - name: 1. 扩展虚拟机物理 Swap 交换空间 (防 OOM 关键保障)
-        run: |
-          sudo swapoff -a || true
-          sudo rm -f /swapfile || true
-          sudo fallocate -l 6G /swapfile || sudo dd if=/dev/zero of=/swapfile bs=1M count=6144
-          sudo chmod 600 /swapfile
-          sudo mkswap /swapfile
-          sudo swapon /swapfile
-          free -h
-
-      - name: 2. 下载汉化产物
+      - name: 下载阶段一已完成编译的产物
         uses: actions/download-artifact@v4
         with:
-          name: localized-output
+          name: localized-build-output
           path: output/
 
-      - name: 3. 设置 QEMU 仿真环境
-        uses: docker/setup-qemu-action@v3
-
-      - name: 4. 设置 Docker Buildx
+      - name: 设置 Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      - name: 5. 登录 Docker Hub
-        if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.push_image == 'true' }}
+      - name: 登录 Docker Hub
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD || secrets.DOCKERHUB_TOKEN }}
 
-      - name: 6. 确定单架构镜像标签
-        id: tag_info
-        run: |
-          PLATFORM_TAG=$(echo "${{ matrix.platform }}" | tr '/' '-')
-          echo "platform_tag=$PLATFORM_TAG" >> $GITHUB_OUTPUT
-
-      - name: 7. 单独构建当前架构镜像并推送独立 Digest
+      - name: 组装并推送 amd64 镜像 (复用预编译前端，极速完成)
         uses: docker/build-push-action@v6
         with:
           context: ./output
           file: ./output/Dockerfile
-          platforms: ${{ matrix.platform }}
-          push: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.push_image == 'true' }}
-          tags: ${{ secrets.DOCKERHUB_REPO || 'kowming/dockhand' }}:${{ steps.tag_info.outputs.platform_tag }}
-          cache-from: type=gha,scope=${{ steps.tag_info.outputs.platform_tag }}
-          cache-to: type=gha,mode=max,scope=${{ steps.tag_info.outputs.platform_tag }}
+          platforms: linux/amd64
+          push: true
+          tags: docker.io/${{ secrets.DOCKERHUB_USERNAME }}/dockhand:amd64-temp
+          cache-from: type=gha,scope=amd64
+          cache-to: type=gha,mode=max,scope=amd64
 
-  # 阶段三：合并多架构 Manifest 清单为统一定名标签 (kowming/dockhand:zh)
-  merge-manifests:
-    needs: [prepare, build]
+  # =========================================================================
+  # 阶段三：构建 linux/arm64 镜像 (免除 QEMU 前端慢速模拟，仅需编译 Go 与 C++)
+  # =========================================================================
+  build-arm64:
+    name: 阶段三：组装并推送 arm64 镜像
+    needs: prepare
     runs-on: ubuntu-latest
-    if: ${{ github.event_name != 'workflow_dispatch' || github.event.inputs.push_image == 'true' }}
     steps:
-      - name: 1. 设置 Docker Buildx
+      - name: 下载阶段一已完成编译的产物
+        uses: actions/download-artifact@v4
+        with:
+          name: localized-build-output
+          path: output/
+
+      - name: 设置 QEMU 仿真环境
+        uses: docker/setup-qemu-action@v3
+
+      - name: 设置 Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      - name: 2. 登录 Docker Hub
+      - name: 登录 Docker Hub
         uses: docker/login-action@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_PASSWORD || secrets.DOCKERHUB_TOKEN }}
 
-      - name: 3. 组合并发布统一 Manifest
-        run: |
-          REPO="${{ secrets.DOCKERHUB_REPO || 'kowming/dockhand' }}"
-          TAG="zh"
-          
-          # 判断参与合并的镜像分支
-          if [ "${{ github.event.inputs.platform }}" = "amd64" ]; then
-            docker buildx imagetools create -t ${REPO}:${TAG} ${REPO}:linux-amd64
-          elif [ "${{ github.event.inputs.platform }}" = "arm64" ]; then
-            docker buildx imagetools create -t ${REPO}:${TAG} ${REPO}:linux-arm64
-          else
-            docker buildx imagetools create -t ${REPO}:${TAG} ${REPO}:linux-amd64 ${REPO}:linux-arm64
-          fi
+      - name: 组装并推送 arm64 镜像 (免除重度 Vite 编译，极速完成)
+        uses: docker/build-push-action@v6
+        with:
+          context: ./output
+          file: ./output/Dockerfile
+          platforms: linux/arm64
+          push: true
+          tags: docker.io/${{ secrets.DOCKERHUB_USERNAME }}/dockhand:arm64-temp
+          cache-from: type=gha,scope=arm64
+          cache-to: type=gha,mode=max,scope=arm64
 
-          echo "🎉 多架构镜像清单发布成功: ${REPO}:${TAG}"
+  # =========================================================================
+  # 阶段四：合并发布多架构清单为统一定名标签 (kowming/dockhand:zh)
+  # =========================================================================
+  publish-manifest:
+    name: 阶段四：发布统一多架构清单
+    needs: [build-amd64, build-arm64]
+    runs-on: ubuntu-latest
+    steps:
+      - name: 设置 Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: 登录 Docker Hub
+        uses: docker/login-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD || secrets.DOCKERHUB_TOKEN }}
+
+      - name: 汇合 amd64 与 arm64 镜像并发布统一定名标签
+        run: |
+          USER="${{ secrets.DOCKERHUB_USERNAME }}"
+          docker buildx imagetools create \
+            -t docker.io/${USER}/dockhand:zh \
+            docker.io/${USER}/dockhand:amd64-temp \
+            docker.io/${USER}/dockhand:arm64-temp
+
+          echo "🎉 多架构统一镜像发布成功: docker.io/${USER}/dockhand:zh"
