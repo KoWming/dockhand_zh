@@ -1,0 +1,538 @@
+{
+	"scope": "src/routes/audit",
+	"entries": [
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		},
+		{
+			"原文": "Clear",
+			"翻译": "清空",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Action",
+			"翻译": "操作",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "All time",
+			"翻译": "全部时间",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Loading...",
+			"翻译": "加载中...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "User",
+			"翻译": "用户",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "actions",
+			"翻译": "个操作",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Activate license",
+			"翻译": "激活许可证",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "All environments",
+			"翻译": "全部环境",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Audit log",
+			"翻译": "审计日志",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Audit log - Dockhand",
+			"翻译": "审计日志 - Dockhand",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Audit log details",
+			"翻译": "审计日志详情",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Audit logging is an enterprise feature that tracks all user actions for compliance and security monitoring.",
+			"翻译": "审计日志是一项企业版功能，可跟踪所有用户操作以进行合规性和安全性监控。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Changes",
+			"翻译": "变更",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Clear all filters",
+			"翻译": "清除所有筛选",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Close menu",
+			"翻译": "关闭菜单",
+			"kind": "attr",
+			"attr": "aria-label",
+			"context": "attr:aria-label",
+			"n": 1
+		},
+		{
+			"原文": "Connect",
+			"翻译": "连接",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Containers",
+			"翻译": "容器",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Create",
+			"翻译": "创建",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Custom",
+			"翻译": "自定义",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Custom range...",
+			"翻译": "自定义范围...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Description",
+			"翻译": "描述",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Details",
+			"翻译": "详情",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Disconnect",
+			"翻译": "断开连接",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "End of results (",
+			"翻译": "已到结果末尾(",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Enterprise feature",
+			"翻译": "企业版功能",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "entities",
+			"翻译": "个实体",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Entity",
+			"翻译": "实体",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Entity ID",
+			"翻译": "实体 ID",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Entity name",
+			"翻译": "实体名称",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Entity type",
+			"翻译": "实体类型",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "entries)",
+			"翻译": "条记录)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Environment",
+			"翻译": "环境",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Environment ID",
+			"翻译": "环境 ID",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Environments",
+			"翻译": "环境",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Exec",
+			"翻译": "执行命令",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Failed to fetch audit logs",
+			"翻译": "获取审计日志失败",
+			"kind": "str",
+			"context": "new:Error",
+			"n": 1
+		},
+		{
+			"原文": "From",
+			"翻译": "起始",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Git credentials",
+			"翻译": "Git 凭据",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Git repositories",
+			"翻译": "Git 仓库",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Images",
+			"翻译": "镜像",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "IP address",
+			"翻译": "IP 地址",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Last 30 days",
+			"翻译": "最近 30 天",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Last 7 days",
+			"翻译": "最近 7 天",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Last month",
+			"翻译": "上个月",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Loading more...",
+			"翻译": "正在加载更多...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Login",
+			"翻译": "登录",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Logout",
+			"翻译": "登出",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Markdown",
+			"翻译": "Markdown",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Networks",
+			"翻译": "网络",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "No audit log entries found",
+			"翻译": "未找到审计日志记录",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Pause",
+			"翻译": "暂停",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Prune",
+			"翻译": "清理",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Pull",
+			"翻译": "拉取",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Push",
+			"翻译": "推送",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Registries",
+			"翻译": "镜像仓库",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Restart",
+			"翻译": "重启",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Roles",
+			"翻译": "角色",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Settings",
+			"翻译": "设置",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Stacks",
+			"翻译": "应用栈",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Start",
+			"翻译": "启动",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Stop",
+			"翻译": "停止",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Sync",
+			"翻译": "同步",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "This month",
+			"翻译": "本月",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Timestamp",
+			"翻译": "时间戳",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "To",
+			"翻译": "截止",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Today",
+			"翻译": "今天",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Unpause",
+			"翻译": "恢复",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Update",
+			"翻译": "更新",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "User agent",
+			"翻译": "用户代理 (User Agent)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "users",
+			"翻译": "个用户",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Users",
+			"翻译": "用户",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Volumes",
+			"翻译": "存储卷",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Yesterday",
+			"翻译": "昨天",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		}
+	]
+}

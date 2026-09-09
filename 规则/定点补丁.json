@@ -1,0 +1,410 @@
+[
+	{
+		"file": "src/app.html",
+		"查找": "<html lang=\"en\">",
+		"替换为": "<html lang=\"zh-CN\">",
+		"说明": "HTML 语言声明改为简体中文"
+	},
+	{
+		"file": "svelte.config.js",
+		"查找": "const config = {",
+		"替换为": "const config = {\n\tonwarn(warning, handler) {\n\t\tif (/^(a11y_|svelte_component_deprecated|slot_element_deprecated|state_referenced_locally|non_reactive_update|element_invalid_self_closing_tag|attribute_quoted)/.test(warning.code || '')) return;\n\t\thandler(warning);\n\t},",
+		"说明": "过滤上游自带的编译警告噪音(a11y 无障碍提示与 Svelte 5 迁移提示,数百条,不影响功能与产物);上游源码写法问题不在汉化流水线修复范围"
+	},
+	{
+		"file": "src/app.css",
+		"查找": "@import \"tailwindcss\";",
+		"替换为": "@import \"tailwindcss\";\n@import \"./tw-sources.gen.css\";",
+		"说明": "引入逐文件扫描清单:本机(无 git)下 Tailwind 4.3.3 的目录/宽 glob @source 扫描静默失效(产物无工具类, 页面无样式),只有精确单文件路径可靠;清单由 apply 写盘后自动生成"
+	},
+	{
+		"file": "src/app.css",
+		"查找": "--font-sans: system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", sans-serif",
+		"替换为": "--font-sans: system-ui, -apple-system, BlinkMacSystemFont, \"Segoe UI\", \"PingFang SC\", \"Hiragino Sans GB\", \"Microsoft YaHei\", \"Noto Sans SC\", sans-serif",
+		"说明": "字体栈追加中文字体,保证中文渲染一致"
+	},
+	{
+		"file": "package.json",
+		"查找": "npx license-checker --json --production | jq 'to_entries | map({name: (.key | split(\\\"@\\\")[0:-1] | join(\\\"@\\\")), version: (.key | split(\\\"@\\\")[-1]), license: .value.licenses, repository: .value.repository}) | sort_by(.name)' > src/lib/data/dependencies.json.tmp && mv src/lib/data/dependencies.json.tmp src/lib/data/dependencies.json || true && npm run generate:openapi",
+		"替换为": "npm run generate:openapi",
+		"说明": "prebuild 去掉 license-checker+jq 管道:Windows cmd 无 jq,且单引号过滤器被 cmd 当管道解析直接报错;dependencies.json 上游已提交(242 条)随 apply 复制,本地构建无需再生成"
+	},
+	{
+		"file": "src/lib/components/host-info.svelte",
+		"查找": "{formatBytes(hostInfo.totalMemory)} RAM",
+		"替换为": "{formatBytes(hostInfo.totalMemory)} 内存",
+		"说明": "主机内存信息 RAM 显示为 内存"
+	},
+	{
+		"file": "src/routes/dashboard/dashboard-disk-usage.svelte",
+		"查找": "title=\"Images: {formatBytes(imagesSize)}\"",
+		"替换为": "title=\"镜像: {formatBytes(imagesSize)}\"",
+		"说明": "磁盘使用分析进度条 hover 提示汉化"
+	},
+	{
+		"file": "src/routes/dashboard/dashboard-disk-usage.svelte",
+		"查找": "title=\"Containers: {formatBytes(containersSize)}\"",
+		"替换为": "title=\"容器: {formatBytes(containersSize)}\"",
+		"说明": "磁盘使用分析进度条 hover 提示汉化"
+	},
+	{
+		"file": "src/routes/dashboard/dashboard-disk-usage.svelte",
+		"查找": "title=\"Volumes: {formatBytes(volumesSize)}\"",
+		"替换为": "title=\"存储卷: {formatBytes(volumesSize)}\"",
+		"说明": "磁盘使用分析进度条 hover 提示汉化"
+	},
+	{
+		"file": "src/routes/dashboard/dashboard-disk-usage.svelte",
+		"查找": "title=\"Build cache: {formatBytes(buildCacheSize)}\"",
+		"替换为": "title=\"构建缓存: {formatBytes(buildCacheSize)}\"",
+		"说明": "磁盘使用分析进度条 hover 提示汉化"
+	},
+	{
+		"file": "src/lib/server/scheduler/index.ts",
+		"查找": "{\n\t\t\tid: SYSTEM_SCHEDULE_CLEANUP_ID,\n\t\t\ttype: 'system_cleanup' as const,\n\t\t\tname: 'Schedule execution cleanup',\n\t\t\tdescription: `Removes execution logs older than ${scheduleRetention} days`,\n\t\t\tcronExpression: scheduleCleanupCron,\n\t\t\tnextRun: scheduleCleanupEnabled ? getNextRun(scheduleCleanupCron)?.toISOString() ?? null : null,\n\t\t\tisSystem: true,\n\t\t\tenabled: scheduleCleanupEnabled\n\t\t},\n\t\t{\n\t\t\tid: SYSTEM_EVENT_CLEANUP_ID,\n\t\t\ttype: 'system_cleanup' as const,\n\t\t\tname: 'Container event cleanup',\n\t\t\tdescription: `Removes container events older than ${eventRetention} days`,\n\t\t\tcronExpression: eventCleanupCron,\n\t\t\tnextRun: eventCleanupEnabled ? getNextRun(eventCleanupCron)?.toISOString() ?? null : null,\n\t\t\tisSystem: true,\n\t\t\tenabled: eventCleanupEnabled\n\t\t},\n\t\t{\n\t\t\tid: SYSTEM_VOLUME_HELPER_CLEANUP_ID,\n\t\t\ttype: 'system_cleanup' as const,\n\t\t\tname: 'Volume helper cleanup',\n\t\t\tdescription: 'Cleans up temporary volume browser containers',\n\t\t\tcronExpression: '*/30 * * * *',\n\t\t\tnextRun: getNextRun('*/30 * * * *')?.toISOString() ?? null,\n\t\t\tisSystem: true,\n\t\t\tenabled: true\n\t\t},\n\t\t{\n\t\t\tid: SYSTEM_SCANNER_CLEANUP_ID,\n\t\t\ttype: 'system_cleanup' as const,\n\t\t\tname: 'Scanner cache cleanup',\n\t\t\tdescription: 'Removes scanner vulnerability database cache to reclaim disk space',\n\t\t\tcronExpression: scannerCleanupCron,\n\t\t\tnextRun: scannerCleanupEnabled ? getNextRun(scannerCleanupCron)?.toISOString() ?? null : null,\n\t\t\tisSystem: true,\n\t\t\tenabled: scannerCleanupEnabled\n\t\t}",
+		"替换为": "{\n\t\t\tid: SYSTEM_SCHEDULE_CLEANUP_ID,\n\t\t\ttype: 'system_cleanup' as const,\n\t\t\tname: '计划任务执行记录清理',\n\t\t\tdescription: `清理超过 ${scheduleRetention} 天的计划任务执行记录`,\n\t\t\tcronExpression: scheduleCleanupCron,\n\t\t\tnextRun: scheduleCleanupEnabled ? getNextRun(scheduleCleanupCron)?.toISOString() ?? null : null,\n\t\t\tisSystem: true,\n\t\t\tenabled: scheduleCleanupEnabled\n\t\t},\n\t\t{\n\t\t\tid: SYSTEM_EVENT_CLEANUP_ID,\n\t\t\ttype: 'system_cleanup' as const,\n\t\t\tname: '容器事件清理',\n\t\t\tdescription: `清理超过 ${eventRetention} 天的容器事件记录`,\n\t\t\tcronExpression: eventCleanupCron,\n\t\t\tnextRun: eventCleanupEnabled ? getNextRun(eventCleanupCron)?.toISOString() ?? null : null,\n\t\t\tisSystem: true,\n\t\t\tenabled: eventCleanupEnabled\n\t\t},\n\t\t{\n\t\t\tid: SYSTEM_VOLUME_HELPER_CLEANUP_ID,\n\t\t\ttype: 'system_cleanup' as const,\n\t\t\tname: '数据卷辅助容器清理',\n\t\t\tdescription: '清理用于浏览数据卷内容的临时容器',\n\t\t\tcronExpression: '*/30 * * * *',\n\t\t\tnextRun: getNextRun('*/30 * * * *')?.toISOString() ?? null,\n\t\t\tisSystem: true,\n\t\t\tenabled: true\n\t\t},\n\t\t{\n\t\t\tid: SYSTEM_SCANNER_CLEANUP_ID,\n\t\t\ttype: 'system_cleanup' as const,\n\t\t\tname: '扫描器缓存清理',\n\t\t\tdescription: '清理扫描器漏洞数据库缓存以释放磁盘空间',\n\t\t\tcronExpression: scannerCleanupCron,\n\t\t\tnextRun: scannerCleanupEnabled ? getNextRun(scannerCleanupCron)?.toISOString() ?? null : null,\n\t\t\tisSystem: true,\n\t\t\tenabled: scannerCleanupEnabled\n\t\t}",
+		"说明": "系统计划任务名称与描述服务端汉化"
+	},
+	{
+		"file": "src/routes/schedules/+page.svelte",
+		"查找": "\tfunction formatNextRun(iso: string | null): string {\n\t\tif (!iso) return '-';\n\t\tconst date = new Date(iso);\n\t\tconst now = new Date();\n\t\tconst diff = date.getTime() - now.getTime();\n\n\t\tif (diff < 0) return 'Overdue';\n\t\tif (diff < 60000) return 'Less than 1 min';\n\t\tif (diff < 3600000) return `In ${Math.floor(diff / 60000)} min`;\n\t\tif (diff < 86400000) return `In ${Math.floor(diff / 3600000)} hours`;\n\t\treturn formatTimestamp(iso);\n\t}",
+		"替换为": "\tconst SYS_JOB_NAMES: Record<string, string> = {\n\t\t'Schedule execution cleanup': '计划任务执行记录清理',\n\t\t'Container event cleanup': '容器事件清理',\n\t\t'Volume helper cleanup': '数据卷辅助容器清理',\n\t\t'Scanner cache cleanup': '扫描器缓存清理'\n\t};\n\tfunction getScheduleName(name: string): string {\n\t\treturn SYS_JOB_NAMES[name] || name;\n\t}\n\tfunction getScheduleDesc(desc: string | null | undefined): string {\n\t\tif (!desc) return '';\n\t\tif (desc === 'Cleans up temporary volume browser containers') return '清理用于浏览数据卷内容的临时容器';\n\t\tif (desc === 'Removes scanner vulnerability database cache to reclaim disk space') return '清理扫描器漏洞数据库缓存以释放磁盘空间';\n\t\tif (desc.startsWith('Removes execution logs older than')) {\n\t\t\treturn desc.replace('Removes execution logs older than', '清理超过').replace('days', '天的计划任务执行记录');\n\t\t}\n\t\tif (desc.startsWith('Removes container events older than')) {\n\t\t\treturn desc.replace('Removes container events older than', '清理超过').replace('days', '天的容器事件记录');\n\t\t}\n\t\treturn desc;\n\t}\n\n\tfunction formatNextRun(iso: string | null): string {\n\t\tif (!iso) return '-';\n\t\tconst date = new Date(iso);\n\t\tconst now = new Date();\n\t\tconst diff = date.getTime() - now.getTime();\n\n\t\tif (diff < 0) return '已逾期';\n\t\tif (diff < 60000) return '不到 1 分钟后';\n\t\tif (diff < 3600000) return `${Math.floor(diff / 60000)} 分钟后`;\n\t\tif (diff < 86400000) return `${Math.floor(diff / 3600000)} 小时后`;\n\t\treturn formatTimestamp(iso);\n\t}",
+		"说明": "计划页面脚本层注入系统任务映射函数与相对时间汉化"
+	},
+	{
+		"file": "src/routes/schedules/+page.svelte",
+		"查找": "<span class=\"truncate\">{schedule.name}</span>",
+		"替换为": "<span class=\"truncate\">{getScheduleName(schedule.name)}</span>",
+		"说明": "计划页面调用 getScheduleName 渲染任务名"
+	},
+	{
+		"file": "src/routes/schedules/+page.svelte",
+		"查找": "<span class=\"truncate\">{schedule.description || 'System job'}</span>",
+		"替换为": "<span class=\"truncate\">{getScheduleDesc(schedule.description) || '系统任务'}</span>",
+		"说明": "计划页面调用 getScheduleDesc 渲染任务描述"
+	},
+	{
+		"file": "src/routes/registry/+page.svelte",
+		"查找": "placeholder={selectedRegistry ? `Search ${selectedRegistry.name} for images...` : 'Search for images...'}",
+		"替换为": "placeholder={selectedRegistry ? `在 ${selectedRegistry.name} 中搜索镜像...` : '搜索镜像...'}",
+		"说明": "仓库页面主搜索框动态占位符汉化"
+	},
+	{
+		"file": "src/routes/registry/+page.svelte",
+		"查找": "{filteredResults.length === results.length\n\t\t\t\t\t\t? `${results.length} images`\n\t\t\t\t\t\t: `${filteredResults.length} of ${results.length} images`}",
+		"替换为": "{filteredResults.length === results.length\n\t\t\t\t\t\t? `${results.length} 个镜像`\n\t\t\t\t\t\t: `${filteredResults.length} / ${results.length} 个镜像`}",
+		"说明": "仓库页面浏览模式镜像数量统计插值汉化"
+	},
+	{
+		"file": "src/routes/stacks/ImportStackModal.svelte",
+		"查找": "\t// Browser title with environment info\n\tconst browserTitle = $derived.by(() => {\n\t\tconst envPart = envName ? ` to ${envName}` : '';\n\t\treturn `Adopt stacks${envPart}`;\n\t});\n\n\tconst browserDescription = $derived.by(() => {\n\t\tif (isRemoteEnv) {\n\t\t\treturn `Browse the Dockhand host filesystem to find compose files. Files are managed locally — Hawser only proxies Docker API calls, not filesystem access.`;\n\t\t}\n\t\treturn 'Browse to a compose file or scan a directory for stacks.';\n\t});",
+		"替换为": "\t// Browser title with environment info\n\tconst browserTitle = $derived.by(() => {\n\t\tconst envPart = envName ? `到 ${envName === 'Unknown' ? '未知环境' : envName}` : '';\n\t\treturn `收编应用栈 ${envPart}`.trim();\n\t});\n\n\tconst browserDescription = $derived.by(() => {\n\t\tif (isRemoteEnv) {\n\t\t\treturn '浏览 Dockhand 宿主机文件系统以查找 compose 文件。文件在本地管理 — Hawser 仅代理 Docker API 调用，不代理文件系统访问。';\n\t\t}\n\t\treturn '浏览查找 compose 文件，或扫描目录以查找应用栈。';\n\t});",
+		"说明": "收编应用栈弹窗标题与描述动态插值汉化"
+	},
+	{
+		"file": "src/routes/stacks/ImportStackModal.svelte",
+		"查找": "<Dialog.Description>\n\t\t\t\t\t{scanResults.length} stack(s) found. Select which ones to adopt into {envName}.\n\t\t\t\t</Dialog.Description>",
+		"替换为": "<Dialog.Description>\n\t\t\t\t\t找到 {scanResults.length} 个应用栈。选择要收编到 {envName === 'Unknown' ? '未知环境' : envName} 的应用栈。\n\t\t\t\t</Dialog.Description>",
+		"说明": "收编应用栈扫描结果描述动态插值汉化"
+	},
+	{
+		"file": "src/routes/stacks/GitStackModal.svelte",
+		"查找": "infoText=\"Override variables from your repository env files. Non-secrets are saved to <code class='bg-muted px-1 rounded'>.env.dockhand</code> in the stack directory. Secrets are stored in the database and injected via shell environment at deploy time.<br/><br/>Variables are available for <strong>compose file interpolation</strong> using <code class='bg-muted px-1 rounded'>${'{VAR_NAME}'}</code> syntax. They are not automatically injected into containers — use <code class='bg-muted px-1 rounded'>environment:</code> or reference <code class='bg-muted px-1 rounded'>.env.dockhand</code> in <code class='bg-muted px-1 rounded'>env_file:</code> to pass them through.\"",
+		"替换为": "infoText=\"覆盖仓库 env 文件中的变量。非机密变量将保存到应用栈目录下的 <code class='bg-muted px-1 rounded'>.env.dockhand</code>。机密变量保存在数据库中，并在部署时通过 shell 环境变量注入。<br/><br/>变量可使用 <code class='bg-muted px-1 rounded'>${'{VAR_NAME}'}</code> 语法进行 <strong>compose 文件插值</strong>。它们不会自动注入到容器中 — 请使用 <code class='bg-muted px-1 rounded'>environment:</code> 或在 <code class='bg-muted px-1 rounded'>env_file:</code> 中引用 <code class='bg-muted px-1 rounded'>.env.dockhand</code> 将其传递给容器。\"",
+		"说明": "Git 应用栈弹窗环境变量说明气泡提示汉化"
+	},
+	{
+		"file": "src/routes/stacks/StackModal.svelte",
+		"查找": "infoText=\"These variables will be written to a .env file in the stack directory and passed to the compose command.\"",
+		"替换为": "infoText=\"这些变量将写入应用栈目录下的 .env 文件，并传递给 compose 命令。\"",
+		"说明": "常规应用栈弹窗环境变量说明气泡提示汉化"
+	},
+	{
+		"file": "src/routes/settings/general/GeneralTab.svelte",
+		"查找": "Format when downloading files from containers or volumes. \"No archive\" emits raw bytes for single files; directories still download as tar.",
+		"替换为": "从容器或存储卷下载文件时的格式。“不归档”将直接输出单个文件的原始字节；目录仍将下载为 tar 归档。",
+		"说明": "常规设置中下载格式描述完整汉化"
+	},
+	{
+		"file": "src/routes/settings/registries/RegistryModal.svelte",
+		"查找": "<Dialog.Title>{isEditing ? 'Edit' : 'Add'} registry</Dialog.Title>",
+		"替换为": "<Dialog.Title>{isEditing ? '编辑' : '添加'}镜像仓库</Dialog.Title>",
+		"说明": "镜像仓库弹窗三元标题汉化"
+	},
+	{
+		"file": "src/routes/settings/registries/RegistryModal.svelte",
+		"查找": "<p class=\"text-xs text-muted-foreground\">Credentials {isEditing ? '(leave password blank to keep existing)' : '(optional)'}</p>",
+		"替换为": "<p class=\"text-xs text-muted-foreground\">凭据 {isEditing ? '(留空以保留现有密码)' : '(可选)'}</p>",
+		"说明": "镜像仓库弹窗凭据提示汉化"
+	},
+	{
+		"file": "src/routes/settings/registries/RegistryModal.svelte",
+		"查找": "placeholder={isEditing ? 'leave blank to keep existing' : 'password or access token'}",
+		"替换为": "placeholder={isEditing ? '留空以保留现有密码' : '密码或访问令牌'}",
+		"说明": "镜像仓库弹窗密码占位符汉化"
+	},
+	{
+		"file": "src/routes/settings/registries/RegistryModal.svelte",
+		"查找": "\t\t\t\t{isEditing ? 'Save' : 'Add'}",
+		"替换为": "\t\t\t\t{isEditing ? '保存' : '添加'}",
+		"说明": "镜像仓库弹窗提交按钮汉化"
+	},
+	{
+		"file": "src/routes/settings/git/GitRepositoryModal.svelte",
+		"查找": "{isEditing ? 'Edit' : 'Add'} Git repository",
+		"替换为": "{isEditing ? '编辑' : '添加'} Git 仓库",
+		"说明": "Git 仓库弹窗三元标题汉化"
+	},
+	{
+		"file": "src/routes/settings/git/GitRepositoryModal.svelte",
+		"查找": "{isEditing ? 'Update repository settings' : 'Add a Git repository that can be used to deploy stacks'}",
+		"替换为": "{isEditing ? '更新仓库设置' : '添加可用于部署应用栈的 Git 仓库'}",
+		"说明": "Git 仓库弹窗三元描述汉化"
+	},
+	{
+		"file": "src/routes/settings/git/GitRepositoryModal.svelte",
+		"查找": "\t\t\t\t\t\t{isEditing ? 'Save changes' : 'Add repository'}",
+		"替换为": "\t\t\t\t\t\t{isEditing ? '保存更改' : '添加仓库'}",
+		"说明": "Git 仓库弹窗提交按钮汉化"
+	},
+	{
+		"file": "src/routes/settings/secrets/ProviderModal.svelte",
+		"查找": "{isEditing ? \"Edit\" : \"Add\"} secret provider",
+		"替换为": "{isEditing ? \"编辑\" : \"添加\"}机密提供商",
+		"说明": "机密提供商弹窗三元标题汉化"
+	},
+	{
+		"file": "src/routes/settings/secrets/ProviderModal.svelte",
+		"查找": "\t\t\t\t{isEditing ? \"Save\" : \"Add\"}",
+		"替换为": "\t\t\t\t{isEditing ? \"保存\" : \"添加\"}",
+		"说明": "机密提供商弹窗提交按钮汉化"
+	},
+	{
+		"file": "src/routes/settings/config-sets/ConfigSetModal.svelte",
+		"查找": "<Dialog.Title>{isEditing ? 'Edit' : 'Add'} config set</Dialog.Title>",
+		"替换为": "<Dialog.Title>{isEditing ? '编辑' : '添加'}配置集</Dialog.Title>",
+		"说明": "配置集弹窗三元标题汉化"
+	},
+	{
+		"file": "src/routes/settings/config-sets/ConfigSetModal.svelte",
+		"查找": "\t\t\t\t{isEditing ? 'Save' : 'Add'}",
+		"替换为": "\t\t\t\t{isEditing ? '保存' : '添加'}",
+		"说明": "配置集弹窗提交按钮汉化"
+	},
+	{
+		"file": "src/routes/settings/labels/LabelsTab.svelte",
+		"查找": "{addSelectedEnvIds.length > 0 ? `${addSelectedEnvIds.length} environment${addSelectedEnvIds.length !== 1 ? 's' : ''} selected` : '\\u00A0'}",
+		"替换为": "{addSelectedEnvIds.length > 0 ? `已选择 ${addSelectedEnvIds.length} 个环境` : '\\u00A0'}",
+		"说明": "标签弹窗环境选择数量动态插值汉化"
+	},
+	{
+		"file": "src/routes/settings/labels/LabelsTab.svelte",
+		"查找": "This will rename \"{renameTarget.label}\" across {renameTarget.count} environment{renameTarget.count !== 1 ? 's' : ''}.",
+		"替换为": "这将在 {renameTarget.count} 个环境中重命名“{renameTarget.label}”。",
+		"说明": "重命名标签环境数量动态插值汉化"
+	},
+	{
+		"file": "src/routes/settings/auth/AuthTab.svelte",
+		"查找": "authEnabled\n\t\t\t\t? 'Users must log in to access the application'\n\t\t\t\t: 'Authentication is disabled - open access'",
+		"替换为": "authEnabled\n\t\t\t\t? '用户必须登录才能访问系统'\n\t\t\t\t: '身份认证已禁用 — 开放访问'",
+		"说明": "身份认证启用/禁用状态副标题汉化"
+	},
+	{
+		"file": "src/routes/settings/notifications/NotificationModal.svelte",
+		"查找": "<Dialog.Title>{isEditing ? 'Edit' : 'Add'} notification channel</Dialog.Title>",
+		"替换为": "<Dialog.Title>{isEditing ? '编辑' : '添加'}通知通道</Dialog.Title>",
+		"说明": "通知通道弹窗三元标题汉化"
+	},
+	{
+		"file": "src/routes/settings/notifications/NotificationModal.svelte",
+		"查找": "onLabel=\"Enabled\" offLabel=\"Disabled\"",
+		"替换为": "onLabel=\"已启用\" offLabel=\"已禁用\"",
+		"说明": "通知通道状态开关标签汉化"
+	},
+	{
+		"file": "src/routes/settings/notifications/NotificationModal.svelte",
+		"查找": "placeholder={isEditing ? 'Leave blank to keep existing' : 'App password or token'}",
+		"替换为": "placeholder={isEditing ? '留空以保留现有密码' : '应用专用密码或令牌'}",
+		"说明": "通知通道密码占位符汉化"
+	},
+	{
+		"file": "src/routes/settings/notifications/NotificationModal.svelte",
+		"查找": "\t\t\t\t\t{isEditing ? 'Save' : 'Add'}",
+		"替换为": "\t\t\t\t\t{isEditing ? '保存' : '添加'}",
+		"说明": "通知通道弹窗提交按钮汉化"
+	},
+	{
+		"file": "src/routes/settings/auth/oidc/OidcModal.svelte",
+		"查找": "placeholder={isEditing ? 'Leave blank to keep existing' : 'your-client-secret'}",
+		"替换为": "placeholder={isEditing ? '留空以保留现有密码' : '你的客户端机密 (your-client-secret)'}",
+		"说明": "OIDC 弹窗客户端机密占位符汉化"
+	},
+	{
+		"file": "src/routes/settings/auth/oidc/OidcModal.svelte",
+		"查找": "\t\t\t\t{isEditing ? 'Save' : 'Add provider'}",
+		"替换为": "\t\t\t\t{isEditing ? '保存' : '添加提供商'}",
+		"说明": "OIDC 弹窗提交按钮汉化"
+	},
+	{
+		"file": "src/routes/settings/auth/ldap/LdapModal.svelte",
+		"查找": "placeholder={isEditing ? 'Leave blank to keep existing' : 'Enter password'}",
+		"替换为": "placeholder={isEditing ? '留空以保留现有密码' : '输入密码'}",
+		"说明": "LDAP 弹窗密码占位符汉化"
+	},
+	{
+		"file": "src/routes/settings/auth/ldap/LdapModal.svelte",
+		"查找": "{isEditing ? 'Save' : 'Add configuration'}",
+		"替换为": "{isEditing ? '保存' : '添加配置'}",
+		"说明": "LDAP 弹窗提交按钮汉化"
+	},
+	{
+		"file": "src/routes/settings/auth/roles/RoleModal.svelte",
+		"查找": "{isEditing ? 'Save' : 'Create role'}",
+		"替换为": "{isEditing ? '保存' : '创建角色'}",
+		"说明": "角色弹窗提交按钮汉化"
+	},
+	{
+		"file": "src/routes/settings/backups/DestinationModal.svelte",
+		"查找": "<Dialog.Title>{isEditing ? 'Edit backup destination' : 'Add backup destination'}</Dialog.Title>",
+		"替换为": "<Dialog.Title>{isEditing ? '编辑备份目标' : '添加备份目标'}</Dialog.Title>",
+		"说明": "备份目标弹窗标题汉化"
+	},
+	{
+		"file": "src/routes/settings/backups/DestinationModal.svelte",
+		"查找": "<Dialog.Description>{isEditing ? 'Update backup destination settings' : 'Configure a restic backup repository'}</Dialog.Description>",
+		"替换为": "<Dialog.Description>{isEditing ? '更新备份目标设置' : '配置 restic 备份仓库'}</Dialog.Description>",
+		"说明": "备份目标弹窗描述汉化"
+	},
+	{
+		"file": "src/routes/settings/backups/DestinationModal.svelte",
+		"查找": "placeholder={isEditing ? '(leave blank to keep current)' : ''}",
+		"替换为": "placeholder={isEditing ? '(留空以保留当前密码)' : ''}",
+		"说明": "备份目标弹窗密码占位符汉化"
+	},
+	{
+		"file": "src/routes/settings/backups/DestinationModal.svelte",
+		"查找": "{repoConflictName ? 'Save anyway' : needsInit && !isEditing ? 'Create and init' : isEditing ? 'Save' : 'Create'}",
+		"替换为": "{repoConflictName ? '仍然保存' : needsInit && !isEditing ? '创建并初始化' : isEditing ? '保存' : '创建'}",
+		"说明": "备份目标弹窗提交按钮汉化"
+	},
+	{
+		"file": "src/routes/settings/git/GitCredentialModal.svelte",
+		"查找": "{isEditing ? 'Edit' : 'Add'} Git credential",
+		"替换为": "{isEditing ? '编辑' : '添加'} Git 凭据",
+		"说明": "Git 凭据弹窗标题汉化"
+	},
+	{
+		"file": "src/routes/settings/git/GitCredentialModal.svelte",
+		"查找": "{isEditing ? 'Update credential settings' : 'Create a new credential for accessing Git repositories'}",
+		"替换为": "{isEditing ? '更新凭据设置' : '创建用于访问 Git 仓库的新凭据'}",
+		"说明": "Git 凭据弹窗描述汉化"
+	},
+	{
+		"file": "src/routes/settings/git/GitCredentialModal.svelte",
+		"查找": "placeholder={isEditing ? 'Leave empty to keep current' : 'Password or personal access token'}",
+		"替换为": "placeholder={isEditing ? '留空以保留当前凭据' : '密码或个人访问令牌'}",
+		"说明": "Git 凭据弹窗凭据占位符汉化"
+	},
+	{
+		"file": "src/routes/settings/git/GitCredentialModal.svelte",
+		"查找": "{formSaving ? 'Saving...' : (isEditing ? 'Save changes' : 'Add credential')}",
+		"替换为": "{formSaving ? '正在保存...' : (isEditing ? '保存更改' : '添加凭据')}",
+		"说明": "Git 凭据弹窗提交按钮汉化"
+	},
+	{
+		"file": "src/routes/settings/auth/users/UserModal.svelte",
+		"查找": "placeholder={isEditing ? 'Enter new password' : 'Enter password'}",
+		"替换为": "placeholder={isEditing ? '输入新密码' : '输入密码'}",
+		"说明": "用户弹窗密码占位符汉化"
+	},
+	{
+		"file": "src/routes/settings/auth/users/UserModal.svelte",
+		"查找": "placeholder={isEditing ? 'Repeat new password' : 'Repeat password'}",
+		"替换为": "placeholder={isEditing ? '重复新密码' : '重复密码'}",
+		"说明": "用户弹窗重复密码占位符汉化"
+	},
+	{
+		"file": "src/routes/settings/notifications/NotificationModal.svelte",
+		"查找": "<TogglePill bind:checked={formSmtpSecure} onLabel=\"Yes\" offLabel=\"No\" />",
+		"替换为": "<TogglePill bind:checked={formSmtpSecure} onLabel=\"是\" offLabel=\"否\" />",
+		"说明": "SMTP 安全开关标签汉化"
+	},
+	{
+		"file": "src/routes/settings/notifications/NotificationModal.svelte",
+		"查找": "<TogglePill bind:checked={formSmtpSkipTlsVerify} onLabel=\"Yes\" offLabel=\"No\" />",
+		"替换为": "<TogglePill bind:checked={formSmtpSkipTlsVerify} onLabel=\"是\" offLabel=\"否\" />",
+		"说明": "SMTP 跳过 TLS 开关标签汉化"
+	},
+	{
+		"file": "src/routes/containers/BackupPanel.svelte",
+		"查找": "<TogglePill bind:checked={editExcludeCaches} onLabel=\"Yes\" offLabel=\"No\" />",
+		"替换为": "<TogglePill bind:checked={editExcludeCaches} onLabel=\"是\" offLabel=\"否\" />",
+		"说明": "备份面板排除缓存开关标签汉化"
+	},
+	{
+		"file": "src/routes/volumes/CreateVolumeModal.svelte",
+		"查找": "<TogglePill bind:checked={nfsSoft} onLabel=\"Soft\" offLabel=\"Hard\" />",
+		"替换为": "<TogglePill bind:checked={nfsSoft} onLabel=\"软挂载 (Soft)\" offLabel=\"硬挂载 (Hard)\" />",
+		"说明": "NFS 软硬挂载开关标签汉化"
+	},
+	{
+		"file": "src/lib/components/ConfirmPopover.svelte",
+		"查找": "confirmText = 'Confirm',",
+		"替换为": "confirmText = '确认',",
+		"说明": "二次确认气泡弹窗默认按钮文本改为确认"
+	},
+	{
+		"file": "src/lib/components/ConfirmPopover.svelte",
+		"查找": "\tfunction handleOpenChange(newOpen: boolean) {\n\t\topen = newOpen;\n\t\tonOpenChange?.(newOpen);\n\t}",
+		"替换为": "\tconst ACTION_MAP: Record<string, string> = {\n\t\t'clear': '清空', 'Clear': '清空', 'Delete': '删除', 'Update': '更新',\n\t\t'Prune': '清理', 'Start': '启动', 'Stop': '停止', 'Pause': '暂停',\n\t\t'Unpause': '取消暂停', 'Restart': '重启', 'Remove': '移除',\n\t\t'Unlock': '解锁', 'Repair': '修复', 'Down': '停止'\n\t};\n\n\tconst ITEM_MAP: Record<string, string> = {\n\t\t'environment variables': '环境变量', 'activity log': '活动日志',\n\t\t'backup config': '备份配置', 'snapshot': '快照', 'stopped containers': '已停止的容器',\n\t\t'container': '容器', 'backup schedule': '备份计划', 'dangling images': '悬空镜像',\n\t\t'all unused images': '所有未使用的镜像', 'image': '镜像',\n\t\t'unused networks': '未使用的网络', 'network': '网络', 'schedule': '计划任务',\n\t\t'LDAP config': 'LDAP 配置', 'OIDC provider': 'OIDC 提供商', 'role': '角色',\n\t\t'user': '用户', 'repository': '仓库', 'unused data from': '未引用的数据，来自',\n\t\t'index for': '索引，针对', 'destination': '备份目标', 'config set': '配置集',\n\t\t'system on ': '系统数据，位于 ', 'credential': '凭据', 'label': '标签',\n\t\t'channel': '通知通道', 'registry': '镜像仓库', 'secret provider': '机密提供商',\n\t\t'stacks': '应用栈', 'stack': '应用栈', 'unused volumes': '未使用的存储卷',\n\t\t'volume': '存储卷'\n\t};\n\n\tfunction formatActionText(act: string): string {\n\t\treturn ACTION_MAP[act] || act;\n\t}\n\n\tfunction formatItemTypeText(type: string): string {\n\t\tif (ITEM_MAP[type]) return ITEM_MAP[type];\n\t\tif (type.startsWith('all ') && type.endsWith(' containers')) {\n\t\t\treturn type.replace('all ', '全部 ').replace(' containers', ' 个容器');\n\t\t}\n\t\tif (type.includes('stopped container')) {\n\t\t\treturn type.replace('stopped container', '个已停止的容器').replace('s', '');\n\t\t}\n\t\tif (type.includes('running container')) {\n\t\t\treturn type.replace('running container', '个运行中的容器').replace('s', '');\n\t\t}\n\t\tif (type.includes('paused container')) {\n\t\t\treturn type.replace('paused container', '个已暂停的容器').replace('s', '');\n\t\t}\n\t\tif (type.includes('container')) {\n\t\t\treturn type.replace('container', '个容器').replace('s', '');\n\t\t}\n\t\tif (type.includes('network')) {\n\t\t\treturn type.replace('network', '个网络').replace('s', '');\n\t\t}\n\t\tif (type.includes('volume')) {\n\t\t\treturn type.replace('volume', '个存储卷').replace('s', '');\n\t\t}\n\t\treturn type;\n\t}\n\n\tfunction handleOpenChange(newOpen: boolean) {\n\t\topen = newOpen;\n\t\tonOpenChange?.(newOpen);\n\t}",
+		"说明": "二次确认气泡弹窗脚本层注入动作与名词汉化函数"
+	},
+	{
+		"file": "src/lib/components/ConfirmPopover.svelte",
+		"查找": "<span class=\"text-xs whitespace-nowrap\">{action} {itemType} {#if displayName}<strong>{displayName}</strong>{/if}?</span>",
+		"替换为": "<span class=\"text-xs whitespace-nowrap\">是否{formatActionText(action)}{formatItemTypeText(itemType)} {#if displayName}<strong>{displayName}</strong>{/if}？</span>",
+		"说明": "二次确认气泡弹窗模板层应用汉化函数"
+	},
+	{
+		"file": "src/lib/components/theme-toggle.svelte",
+		"查找": "title={mode === 'system' ? 'Theme: system' : mode === 'dark' ? 'Theme: dark' : 'Theme: light'}",
+		"替换为": "title={mode === 'system' ? '主题: 跟随系统' : mode === 'dark' ? '主题: 深色模式' : '主题: 浅色模式'}",
+		"说明": "顶部导航右上角主题切换按钮气泡提示汉化"
+	},
+	{
+		"file": "Dockerfile",
+		"查找": "npm ci ",
+		"替换为": "npm install ",
+		"说明": "npm ci 改为 npm install: ci 严格校验锁定文件, 而 Windows 生成的 lockfile 缺少 Linux 平台可选依赖(@emnapi/* 等), npm install 会按 package.json 自动补齐, 锁定文件仍作为版本依据"
+	},
+	{
+		"file": "src/lib/utils/env-name.ts",
+		"查找": "'Name is required'",
+		"替换为": "'名称必填'",
+		"说明": "环境名称校验必填提示汉化"
+	},
+	{
+		"file": "src/lib/utils/env-name.ts",
+		"查找": "`Name must be ${ENV_NAME_MAX_LENGTH} characters or fewer`",
+		"替换为": "`名称长度不能超过 ${ENV_NAME_MAX_LENGTH} 个字符`",
+		"说明": "环境名称长度校验提示汉化"
+	},
+	{
+		"file": "src/lib/utils/env-name.ts",
+		"查找": "'Name can\\'t contain slashes, wildcards, or other shell-special characters, and can\\'t start with whitespace or end with whitespace or a dot'",
+		"替换为": "'名称不能包含斜杠、通配符或其他 shell 特殊字符，且不能以空格开头，也不能以空格或点号结尾'",
+		"说明": "环境名称特殊字符校验提示汉化"
+	},
+	{
+		"file": "src/routes/settings/about/AboutTab.svelte",
+		"查找": "<Badge variant=\"secondary\" class=\"text-xs\">Version {currentVersion}</Badge>",
+		"替换为": "<div class=\"flex items-center gap-1.5\">\n\t\t\t\t\t\t\t<Badge variant=\"secondary\" class=\"text-xs\">Version {currentVersion}</Badge>\n\t\t\t\t\t\t\t<Badge variant=\"outline\" class=\"text-xs border-emerald-500/40 text-emerald-600 dark:text-emerald-400 bg-emerald-500/10 font-medium\">汉化版 {currentVersion}</Badge>\n\t\t\t\t\t\t</div>",
+		"说明": "关于页面卡片添加汉化版构建版本号徽章"
+	},
+	{
+		"file": "src/routes/settings/about/AboutTab.svelte",
+		"查找": "<!-- Website Link -->\n\t\t\t\t\t<a href=\"https://dockhand.pro\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-sm text-primary hover:underline\">\n\t\t\t\t\t\thttps://dockhand.pro\n\t\t\t\t\t</a>",
+		"替换为": "<!-- Website Link -->\n\t\t\t\t\t<div class=\"flex flex-col items-center gap-1.5\">\n\t\t\t\t\t\t<a href=\"https://dockhand.pro\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-sm text-primary hover:underline\">\n\t\t\t\t\t\t\thttps://dockhand.pro\n\t\t\t\t\t\t</a>\n\t\t\t\t\t\t<div class=\"flex items-center gap-1.5 text-xs text-muted-foreground pt-0.5\">\n\t\t\t\t\t\t\t<span>汉化: <strong class=\"font-medium text-foreground\">KoWming</strong></span>\n\t\t\t\t\t\t\t<span>·</span>\n\t\t\t\t\t\t\t<a href=\"https://github.com/KoWming/dockhand_zh\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline inline-flex items-center gap-0.5\">\n\t\t\t\t\t\t\t\t<span>GitHub 仓库</span>\n\t\t\t\t\t\t\t\t<ExternalLink class=\"w-3 h-3\" />\n\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>",
+		"说明": "关于页面卡片添加汉化作者 KoWming 与 GitHub 仓库链接"
+	}
+]

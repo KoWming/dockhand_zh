@@ -1,0 +1,3100 @@
+{
+	"scope": "src/routes/stacks",
+	"entries": [
+		{
+			"原文": "Create a stack or deploy from Git to get started",
+			"翻译": "创建一个应用栈或从 Git 部署以开始使用",
+			"kind": "attr",
+			"attr": "description"
+		},
+		{
+			"原文": "Deploy a compose stack from a Git repository",
+			"翻译": "从 Git 仓库部署一个 compose 应用栈",
+			"kind": "str"
+		},
+		{
+			"原文": "Update git stack settings",
+			"翻译": "更新 Git 应用栈设置",
+			"kind": "str"
+		},
+		{
+			"原文": "Deploy from Git",
+			"翻译": "来自 Git 部署",
+			"kind": "str"
+		},
+		{
+			"原文": "Edit git stack",
+			"翻译": "编辑 Git 应用栈",
+			"kind": "str"
+		},
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		},
+		{
+			"原文": "Deploying...",
+			"翻译": "正在部署...",
+			"kind": "str"
+		},
+		{
+			"原文": "Creating...",
+			"翻译": "正在创建...",
+			"kind": "str"
+		},
+		{
+			"原文": "Deploy",
+			"翻译": "部署",
+			"kind": "str"
+		},
+		{
+			"原文": "Create",
+			"翻译": "创建",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 10
+		},
+		{
+			"原文": "Key",
+			"翻译": "键",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 6
+		},
+		{
+			"原文": "Value",
+			"翻译": "值",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 6
+		},
+		{
+			"原文": "Deploying...",
+			"翻译": "正在部署...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 5
+		},
+		{
+			"原文": "Copy requires HTTPS",
+			"翻译": "复制操作需要 HTTPS",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 4
+		},
+		{
+			"原文": "Add",
+			"翻译": "添加",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Branch",
+			"翻译": "分支",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Host",
+			"翻译": "主机",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Labels",
+			"翻译": "标签",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Select",
+			"翻译": "选择",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Selected:",
+			"翻译": "已选择:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": ", not on",
+			"翻译": "，而不是在",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": ". Docker commands will be sent to",
+			"翻译": "。Docker 命令将发送至",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "\" already exists. Please choose a different name.",
+			"翻译": "\" 已存在。请选择其他名称。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "A stack named \"",
+			"翻译": "名为 \"",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Adopt",
+			"翻译": "收编",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Adopting...",
+			"翻译": "正在接管...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Backups",
+			"翻译": "备份",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Branch this stack deploys from. Leave empty to follow the branch configured on the repository (",
+			"翻译": "此应用栈部署自的分支。留空则遵循仓库配置的分支 (",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Change stack icon",
+			"翻译": "更改应用栈图标",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "Choose a stack icon",
+			"翻译": "选择应用栈图标",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "Click target service",
+			"翻译": "点击目标服务",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Config",
+			"翻译": "配置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Container",
+			"翻译": "容器",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Create",
+			"翻译": "创建",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Deploy",
+			"翻译": "部署",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Dockhand host",
+			"翻译": "Dockhand 宿主机",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Dockhand will track this compose file, letting you edit, start, and stop the stack from the UI. Your files stay in their current location.",
+			"翻译": "Dockhand 将跟踪此 compose 文件，允许你在界面中编辑、启动和停止应用栈。你的文件保留在当前位置。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Driver",
+			"翻译": "驱动",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Driver options",
+			"翻译": "驱动选项",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Edit git stack",
+			"翻译": "编辑 Git 应用栈",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "Environment variable",
+			"翻译": "环境变量",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "External name (optional)",
+			"翻译": "外部名称（可选）",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Failed",
+			"翻译": "失败",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Failed to load env variables",
+			"翻译": "加载环境变量失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 2
+		},
+		{
+			"原文": "file",
+			"翻译": "文件",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "File path",
+			"翻译": "文件路径",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Image",
+			"翻译": "镜像",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Loading branches…",
+			"翻译": "正在加载分支…",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Move files",
+			"翻译": "移动文件",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Network",
+			"翻译": "网络",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "None (public)",
+			"翻译": "无（公开）",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "OK",
+			"翻译": "正常",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Remove",
+			"翻译": "移除",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Remove",
+			"翻译": "移除",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "Repository",
+			"翻译": "仓库",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Restart",
+			"翻译": "重启",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Restart",
+			"翻译": "重启",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "Saving...",
+			"翻译": "正在保存...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Secret",
+			"翻译": "机密",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "selected",
+			"翻译": "已选择",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "service",
+			"翻译": "服务",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Service",
+			"翻译": "服务",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Stack already exists",
+			"翻译": "应用栈已存在",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Stack name",
+			"翻译": "应用栈名称",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Start",
+			"翻译": "启动",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "Stop",
+			"翻译": "停止",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "Unsaved changes",
+			"翻译": "未保存的更改",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Volume",
+			"翻译": "存储卷",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "What happens when you adopt:",
+			"翻译": "收编后会发生什么:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "— this stack is running in Docker but Dockhand doesn't know where its compose file is stored on disk. Browse to locate the file to start editing and managing it.",
+			"翻译": "— 此应用栈正在 Docker 中运行，但 Dockhand 不知晓其 compose 文件在磁盘上的存储位置。请浏览定位该文件以开始编辑和管理。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": ",\n\t\t\t\t\tlicensed CC BY 4.0. Fetched once and cached locally.",
+			"翻译": "，\n\t\t\t\t\t采用 CC BY 4.0 许可。单次获取并在本地缓存。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": ".\n\t\t\t\t\t\t\tContainers will only restart if the configuration changed.",
+			"翻译": "。\n\t\t\t\t\t\t\t仅当配置发生变更时容器才会重启。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "(data is unrecoverable)",
+			"翻译": "（数据不可恢复）",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "(per-stack)",
+			"翻译": "（每个应用栈）",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "). Its values override the default",
+			"翻译": "）。其取值将覆盖默认的",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "a newer version tag.",
+			"翻译": "更新的版本标签。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Add new",
+			"翻译": "新增",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Additional env file (optional)",
+			"翻译": "附加 env 文件（可选）",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Additional env file to pass to Docker Compose",
+			"翻译": "传递给 Docker Compose 的附加 env 文件",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Adopt stack",
+			"翻译": "收编应用栈",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Adopt this stack?",
+			"翻译": "收编此应用栈？",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "All",
+			"翻译": "全部",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "All statuses",
+			"翻译": "全部状态",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Always",
+			"翻译": "始终",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "Always pull latest images before deploying, even if the compose file hasn't changed. Useful for CI/CD workflows with static tags like",
+			"翻译": "部署前始终拉取最新镜像，即使 compose 文件未发生变化。适用于包含静态标签的 CI/CD 工作流，例如",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Always redeploy the stack on webhook or scheduled sync, even if no git changes are detected.",
+			"翻译": "在 Webhook 或计划同步时始终重新部署应用栈，即使未检测到 Git 变更。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "and will start after it.",
+			"翻译": "并将在其之后启动。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "App logos",
+			"翻译": "应用图标",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "App logos by",
+			"翻译": "应用图标提供方:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Attachable",
+			"翻译": "允许附加 (Attachable)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Automatically sync repository and redeploy stack if there are changes.",
+			"翻译": "发生变更时自动同步仓库并重新部署应用栈。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Back",
+			"翻译": "返回",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Branches",
+			"翻译": "分支",
+			"kind": "attr",
+			"attr": "heading",
+			"context": "attr:heading",
+			"n": 1
+		},
+		{
+			"原文": "Bridge",
+			"翻译": "网桥 (Bridge)",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "Bridge",
+			"翻译": "网桥 (Bridge)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Browse files",
+			"翻译": "浏览文件",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Browse for compose file",
+			"翻译": "浏览查找 compose 文件",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Browse to locate the compose file for this stack. The editor will load the file contents once selected.",
+			"翻译": "浏览以定位此应用栈的 compose 文件。选择后编辑器将加载文件内容。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Build images",
+			"翻译": "构建镜像",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Build images on deploy",
+			"翻译": "部署时构建镜像",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Change layout",
+			"翻译": "更改布局",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Change location",
+			"翻译": "更改位置",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Check this compose for problems before deploy",
+			"翻译": "部署前检查此 compose 文件是否存在问题",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Checking what can be removed…",
+			"翻译": "正在检查可移除的内容…",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Choose what to remove. The stack's containers are always stopped and removed.",
+			"翻译": "选择要移除的内容。应用栈的容器将始终被停止并移除。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Circle",
+			"翻译": "环形",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Circle",
+			"翻译": "环形",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Clear",
+			"翻译": "清空",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Clear icon",
+			"翻译": "清除图标",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Click a file to select it",
+			"翻译": "点击文件以选中",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Click source service",
+			"翻译": "点击源服务",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Click to select file or folder, double-click to enter folder",
+			"翻译": "单击选择文件或文件夹，双击进入文件夹",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Click to upload an image, then crop it",
+			"翻译": "点击上传图片，然后进行裁剪",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Click volume/network/config/secret",
+			"翻译": "点击存储卷 / 网络 / 配置 / 机密",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Clone and deploy the stack immediately",
+			"翻译": "立即克隆并部署应用栈",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Clone the repository and load environment variables from the",
+			"翻译": "克隆仓库并从以下位置加载环境变量:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Close menu",
+			"翻译": "关闭菜单",
+			"kind": "attr",
+			"attr": "aria-label",
+			"context": "attr:aria-label",
+			"n": 1
+		},
+		{
+			"原文": "Close panel",
+			"翻译": "关闭面板",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Collapse",
+			"翻译": "折叠",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Command",
+			"翻译": "命令",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Complete",
+			"翻译": "完成",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Compose file",
+			"翻译": "Compose 文件",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Compose file",
+			"翻译": "Compose 文件",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "Compose file location unknown. Click the stack name or edit button to locate it.",
+			"翻译": "Compose 文件位置未知。点击应用栈名称或编辑按钮以定位。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Compose file not available",
+			"翻译": "Compose 文件不可用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Compose file path",
+			"翻译": "Compose 文件路径",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Compose stacks",
+			"翻译": "Compose 应用栈",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Compose Validate",
+			"翻译": "Compose 校验",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Config mounted to this service.",
+			"翻译": "已挂载到此服务的配置。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Configure this URL in your Git provider. Secret is used for signature verification.",
+			"翻译": "在你的 Git 提供商中配置此 URL。机密用于签名验证。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "configured",
+			"翻译": "已配置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "container",
+			"翻译": "容器",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Container paused",
+			"翻译": "容器已暂停",
+			"kind": "str",
+			"context": "call:toast.success",
+			"n": 1
+		},
+		{
+			"原文": "Container removed",
+			"翻译": "容器已移除",
+			"kind": "str",
+			"context": "call:toast.success",
+			"n": 1
+		},
+		{
+			"原文": "Container restarted",
+			"翻译": "容器已重启",
+			"kind": "str",
+			"context": "call:toast.success",
+			"n": 1
+		},
+		{
+			"原文": "Container started",
+			"翻译": "容器已启动",
+			"kind": "str",
+			"context": "call:toast.success",
+			"n": 1
+		},
+		{
+			"原文": "Container stopped",
+			"翻译": "容器已停止",
+			"kind": "str",
+			"context": "call:toast.success",
+			"n": 1
+		},
+		{
+			"原文": "Container unpaused",
+			"翻译": "容器已恢复运行",
+			"kind": "str",
+			"context": "call:toast.success",
+			"n": 1
+		},
+		{
+			"原文": "Content (inline)",
+			"翻译": "内容（内联）",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Context directory (optional)",
+			"翻译": "上下文目录（可选）",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Continue editing",
+			"翻译": "继续编辑",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Copied",
+			"翻译": "已复制",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Copied!",
+			"翻译": "已复制！",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Copy",
+			"翻译": "复制",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Copy commit hash",
+			"翻译": "复制提交哈希",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Copy logs",
+			"翻译": "复制日志",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Copy path",
+			"翻译": "复制路径",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Copy repository URL",
+			"翻译": "复制仓库 URL",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Copy secret",
+			"翻译": "复制机密",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Copy URL",
+			"翻译": "复制 URL",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Copy webhook URL",
+			"翻译": "复制 Webhook URL",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Create & Start",
+			"翻译": "创建并启动",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Create a new Docker Compose stack",
+			"翻译": "创建新的 Docker Compose 应用栈",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Create compose stack",
+			"翻译": "创建 compose 应用栈",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Create folder",
+			"翻译": "创建文件夹",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Created",
+			"翻译": "已创建",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Created",
+			"翻译": "已创建",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Creating...",
+			"翻译": "正在创建...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Credential",
+			"翻译": "凭据",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Crop icon",
+			"翻译": "裁剪图标",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Current:",
+			"翻译": "当前:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Custom",
+			"翻译": "自定义",
+			"kind": "attr",
+			"attr": "heading",
+			"context": "attr:heading",
+			"n": 1
+		},
+		{
+			"原文": "Dead",
+			"翻译": "已终止",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "default",
+			"翻译": "默认",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "default",
+			"翻译": "默认",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Defaults to compose file's directory",
+			"翻译": "默认为 compose 文件所在目录",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Defaults to the compose file's parent directory.",
+			"翻译": "默认为 compose 文件的上级目录。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Delete files on disk",
+			"翻译": "删除磁盘上的文件",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Delete named volumes",
+			"翻译": "删除具名存储卷",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "depends on",
+			"翻译": "依赖于",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Depends on",
+			"翻译": "依赖于",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Deploy",
+			"翻译": "部署",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Deploy now",
+			"翻译": "立即部署",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Deploy options",
+			"翻译": "部署选项",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Deploy or sync this Git stack first so Dockhand has a local copy of its compose file.",
+			"翻译": "请先部署或同步此 Git 应用栈，以便 Dockhand 获取其 compose 文件的本地副本。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Deployment failed",
+			"翻译": "部署失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Disable build cache",
+			"翻译": "禁用构建缓存",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Discard changes",
+			"翻译": "放弃更改",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Disk",
+			"翻译": "磁盘",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Dockhand default",
+			"翻译": "Dockhand 默认",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Dockhand will track these compose files, letting you edit, start, and stop the stacks from the UI. Your files stay in their current location.",
+			"翻译": "Dockhand 将跟踪这些 compose 文件，允许你在界面中编辑、启动和停止应用栈。你的文件保留在当前位置。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Down",
+			"翻译": "停止",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Down (remove containers)",
+			"翻译": "停止 (移除容器)",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Edit",
+			"翻译": "编辑",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Edit compose file and environment variables",
+			"翻译": "编辑 compose 文件和环境变量",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Editor",
+			"翻译": "编辑器",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Enable scheduled sync",
+			"翻译": "启用定时同步",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Enable webhook",
+			"翻译": "启用 Webhook",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Env file",
+			"翻译": "Env 文件",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "Environment",
+			"翻译": "环境",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "environment variable",
+			"翻译": "环境变量",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Errors",
+			"翻译": "错误",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Exited",
+			"翻译": "已退出",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Expand",
+			"翻译": "展开",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "External config",
+			"翻译": "外部配置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "External network",
+			"翻译": "外部网络",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "External secret",
+			"翻译": "外部机密",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "External stack - update possible for individual containers only.",
+			"翻译": "外部应用栈 — 仅支持更新单个容器。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "External volume",
+			"翻译": "外部存储卷",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Failed to clear update indicators",
+			"翻译": "清除更新标记失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to create stack",
+			"翻译": "创建应用栈失败",
+			"kind": "str",
+			"context": "prop:title",
+			"n": 1
+		},
+		{
+			"原文": "Failed to load stacks",
+			"翻译": "加载应用栈失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to move files",
+			"翻译": "移动文件失败",
+			"kind": "str",
+			"context": "prop:title",
+			"n": 1
+		},
+		{
+			"原文": "Fast in-place restart. Ignores depends_on ordering.",
+			"翻译": "快速就地重启。忽略 depends_on 顺序。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "file (in compose directory) and additional env file (if specified), so you can see what you can override.",
+			"翻译": "文件（位于 compose 目录中）以及附加 env 文件（若已指定），以便你查看可覆盖的内容。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "file in the compose directory is always loaded automatically, if present.",
+			"翻译": "compose 目录中的文件（如果存在）始终会自动加载。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Fix",
+			"翻译": "修复",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Folder name",
+			"翻译": "文件夹名称",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "for root",
+			"翻译": "表示根目录",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "for the repository root when your compose file references files in sibling directories.",
+			"翻译": "表示仓库根目录（当你的 compose 文件引用了同级目录中的文件时）。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Force",
+			"翻译": "强制",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Force",
+			"翻译": "强制",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Force recreate",
+			"翻译": "强制重新创建",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Force redeployment",
+			"翻译": "强制重新部署",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "From",
+			"翻译": "起始",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "From Git",
+			"翻译": "来自 Git",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Gateway",
+			"翻译": "网关",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Generate secret",
+			"翻译": "生成机密",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Git",
+			"翻译": "Git",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Git · read-only",
+			"翻译": "Git · 只读",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Git deploy",
+			"翻译": "Git 部署",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Go up",
+			"翻译": "向上",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Graph",
+			"翻译": "拓扑图",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Grid",
+			"翻译": "网格",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Grid",
+			"翻译": "网格",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Host",
+			"翻译": "主机",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "Icons",
+			"翻译": "图标",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Image updates available — deploy from Git to apply",
+			"翻译": "有可用镜像更新 — 从 Git 部署以应用",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "in the old location that can be moved to the new location.",
+			"翻译": "旧位置中可移动到新位置的内容。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "in the stack folder will be moved.",
+			"翻译": "应用栈文件夹中的内容将被移动。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Initializing...",
+			"翻译": "正在初始化...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Inspect container",
+			"翻译": "查看容器详情",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Internal",
+			"翻译": "内部",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Internal network",
+			"翻译": "内部网络",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "IPAM configuration",
+			"翻译": "IPAM 配置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Leave files",
+			"翻译": "保留文件",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "links",
+			"翻译": "链接",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Loading a different compose file will replace the current editor content.",
+			"翻译": "加载其他 compose 文件将替换当前编辑器的内容。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Loading compose file...",
+			"翻译": "正在加载 compose 文件...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Loading icon list...",
+			"翻译": "正在加载图标列表...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Loading icons...",
+			"翻译": "正在加载图标...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Loading...",
+			"翻译": "加载中...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Locations",
+			"翻译": "位置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Managed by Dockhand",
+			"翻译": "由 Dockhand 管理",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Mem",
+			"翻译": "内存",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Move stack files?",
+			"翻译": "移动应用栈文件？",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Moving...",
+			"翻译": "正在移动...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Name",
+			"翻译": "名称",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Net",
+			"翻译": "网络",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "New folder",
+			"翻译": "新建文件夹",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "New:",
+			"翻译": "新建:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No",
+			"翻译": "否",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "No .env files found in the repository. You can still add variables manually.",
+			"翻译": "仓库中未找到 .env 文件。你仍可手动添加变量。",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "No app logos match \"",
+			"翻译": "没有匹配的应用图标 \"",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No changes",
+			"翻译": "无更改",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No compose file selected",
+			"翻译": "未选择 Compose 文件",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No compose stacks found",
+			"翻译": "未找到 Compose 应用栈",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "No compose stacks found in this directory",
+			"翻译": "此目录中未找到 Compose 应用栈",
+			"kind": "str",
+			"context": "call:toast.info",
+			"n": 1
+		},
+		{
+			"原文": "No containers",
+			"翻译": "无容器",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No environment selected",
+			"翻译": "未选择环境",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "No environment variables found",
+			"翻译": "未找到环境变量",
+			"kind": "str",
+			"context": "call:toast.info",
+			"n": 1
+		},
+		{
+			"原文": "No locations yet. Browse folders to add them here.",
+			"翻译": "暂无位置。浏览文件夹以添加到此处。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No problems found",
+			"翻译": "未发现问题",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No repositories configured. Click \"Add new\" to add one.",
+			"翻译": "未配置任何仓库。点击“新增”添加一个。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "None",
+			"翻译": "无",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "None",
+			"翻译": "无",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Not deployed",
+			"翻译": "未部署",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Not set",
+			"翻译": "未设置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "of",
+			"翻译": "的",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "on",
+			"翻译": "在",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "On failure",
+			"翻译": "失败时",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "Open logs in full view",
+			"翻译": "在完整视图中查看日志",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Open logs inline",
+			"翻译": "内联查看日志",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Open terminal",
+			"翻译": "打开终端",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Overrides from the environment variables editor on the right always take highest precedence.",
+			"翻译": "右侧环境变量编辑器中的覆盖项始终具有最高优先级。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Partial",
+			"翻译": "部分运行",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Pass",
+			"翻译": "通过",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Passes every enabled check.",
+			"翻译": "通过所有已启用的检查项。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Path to the compose file within the repository",
+			"翻译": "compose 文件在仓库内的路径",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Pause",
+			"翻译": "暂停",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Paused",
+			"翻译": "已暂停",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Pick another location",
+			"翻译": "选择其他位置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Please enter a repository URL first",
+			"翻译": "请先输入仓库 URL",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Please select a repository first",
+			"翻译": "请先选择一个仓库",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "PNG, SVG or WebP",
+			"翻译": "PNG、SVG 或 WebP",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Populate",
+			"翻译": "填充",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Port mappings",
+			"翻译": "端口映射",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Ports (comma-separated)",
+			"翻译": "端口（英文逗号分隔）",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Product names, logos and trademarks are the property of their respective owners and are shown for identification only; their use does not imply endorsement.",
+			"翻译": "产品名称、徽标和商标均为其各自所有者的财产，展示仅用于识别目的；其使用并不意味着认可。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Pull images",
+			"翻译": "拉取镜像",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Radial",
+			"翻译": "放射状",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Radial",
+			"翻译": "放射状",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Re-check",
+			"翻译": "重新检查",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Re-pull images",
+			"翻译": "重新拉取镜像",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Read-only",
+			"翻译": "只读",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Receive push events from your Git provider to trigger sync and redeploy.",
+			"翻译": "接收来自 Git 提供商的推送事件以触发同步与重新部署。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Recreate (stop & up)",
+			"翻译": "重新创建 (停止并启动)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Recreate containers in order. New IDs, re-pulls newer images.",
+			"翻译": "按顺序重新创建容器。赋予新 ID，并重新拉取较新的镜像。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Redeploy",
+			"翻译": "重新部署",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Redeploy stack",
+			"翻译": "重新部署应用栈",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Refresh",
+			"翻译": "刷新",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Relative to repository root, e.g.",
+			"翻译": "相对于仓库根目录，例如",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Relocate stack?",
+			"翻译": "重定位应用栈？",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Remove connection",
+			"翻译": "移除连接",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Remove dependency",
+			"翻译": "移除依赖",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Remove from recent",
+			"翻译": "从最近列表中移除",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Remove stack \"",
+			"翻译": "移除应用栈 \"",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Replace content",
+			"翻译": "替换内容",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Replace editor content?",
+			"翻译": "替换编辑器内容？",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Repository name",
+			"翻译": "仓库名称",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Repository URL",
+			"翻译": "仓库 URL",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Required - generate or paste a secret",
+			"翻译": "必填 — 生成或粘贴机密",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Restart in order",
+			"翻译": "按顺序重启",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Restart policy",
+			"翻译": "重启策略",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Restart stack",
+			"翻译": "重启应用栈",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Restarting",
+			"翻译": "重启中",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Restarting",
+			"翻译": "重启中",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Retry",
+			"翻译": "重试",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Review the compose file before adopting.",
+			"翻译": "在收编前审查 compose 文件。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Run",
+			"翻译": "运行",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "running",
+			"翻译": "正在运行",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Running",
+			"翻译": "运行中",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Running",
+			"翻译": "运行中",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Running containers:",
+			"翻译": "正在运行的容器:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Save",
+			"翻译": "保存",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Save & redeploy",
+			"翻译": "保存并重新部署",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Save and close",
+			"翻译": "保存并关闭",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Save and deploy",
+			"翻译": "保存并部署",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Save changes",
+			"翻译": "保存更改",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Scan this folder",
+			"翻译": "扫描此文件夹",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Scanning...",
+			"翻译": "正在扫描...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Secret mounted to this service.",
+			"翻译": "挂载到此服务的机密。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Select a repository...",
+			"翻译": "选择仓库...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Select environment file or directory",
+			"翻译": "选择环境文件或目录",
+			"kind": "str",
+			"context": "prop:title",
+			"n": 1
+		},
+		{
+			"原文": "Select existing",
+			"翻译": "选择已有",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Select stacks to adopt to",
+			"翻译": "选择要收编到的应用栈",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Service connected to this network.",
+			"翻译": "连接到此网络的服务。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Settings",
+			"翻译": "设置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Specify one of: file or environment",
+			"翻译": "指定以下之一: 文件或环境",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Specify one of: file, content, or environment",
+			"翻译": "指定以下之一: 文件、内容或环境",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "SSH key or token for private repositories.",
+			"翻译": "用于私有仓库的 SSH 密钥或令牌。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Stack:",
+			"翻译": "应用栈:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "stack(s)",
+			"翻译": "个应用栈",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "stack(s) found. Select which ones to adopt into",
+			"翻译": "个应用栈。选择要收编进哪个:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Stacks - Dockhand",
+			"翻译": "应用栈 - Dockhand",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Start",
+			"翻译": "启动",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Starting...",
+			"翻译": "正在启动...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Stop",
+			"翻译": "停止",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Stop then start in depends_on order. Same container IDs.",
+			"翻译": "按 depends_on 顺序先停止后启动。保持相同容器 ID。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Stopped",
+			"翻译": "已停止",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Subnet",
+			"翻译": "子网",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Suggestions",
+			"翻译": "建议",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Sync from Git",
+			"翻译": "从 Git 同步",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Sync from git?",
+			"翻译": "从 Git 同步？",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "The webhook URL will be available after creating the stack.",
+			"翻译": "Webhook URL 将在应用栈创建后生成。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "These compose files are on the",
+			"翻译": "这些 compose 文件位于",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "This compose file is on the",
+			"翻译": "此 compose 文件位于",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "This is a Git-managed stack — Dockhand shows its compose read-only; edit it in the repository.",
+			"翻译": "这是由 Git 管理的应用栈 — Dockhand 仅以只读方式展示其 compose 文件；请在仓库中编辑。",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "This location isn't persisted",
+			"翻译": "此位置未持久化",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "This service depends on",
+			"翻译": "此服务依赖于",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "This stack has no files or named volumes Dockhand manages — only the stack\n\t\t\t\t\t\trecord and its containers will be removed.",
+			"翻译": "此应用栈没有 Dockhand 管理的文件或具名存储卷 — 仅会移除应用栈\n\t\t\t\t\t\t记录及其容器。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "This will be the name of the deployed stack",
+			"翻译": "这将作为已部署应用栈的名称",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "This will pull the latest changes for",
+			"翻译": "这将拉取最新变更，针对",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "To",
+			"翻译": "截止",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "to build images from Dockerfiles before starting containers.",
+			"翻译": "在启动容器前基于 Dockerfile 构建镜像。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "to force a clean build without using cached layers.",
+			"翻译": "强制执行干净构建，不使用缓存镜像层。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Tree",
+			"翻译": "树形",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Tree",
+			"翻译": "树形",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Type a branch name (e.g. \"main\") or pick from the list.",
+			"翻译": "输入分支名称（例如 \"main\"）或从列表中选择。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Type a branch name…",
+			"翻译": "输入分支名称…",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Type a name or pick from the list.",
+			"翻译": "输入名称或从列表中选择。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Unable to browse files",
+			"翻译": "无法浏览文件",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Unless stopped",
+			"翻译": "除非手动停止",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "Unpause",
+			"翻译": "恢复",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Untracked",
+			"翻译": "未跟踪",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Untracked stack",
+			"翻译": "未跟踪的应用栈",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Update available - click to update",
+			"翻译": "有可用更新 - 点击更新",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Update check failed",
+			"翻译": "更新检查失败",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Update status unknown — often a Docker Hub rate limit. Try again later.",
+			"翻译": "更新状态未知 — 通常由于 Docker Hub 速率限制。请稍后重试。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Upload",
+			"翻译": "上传",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Use",
+			"翻译": "使用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Use \"",
+			"翻译": "使用 \"",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Use it anyway",
+			"翻译": "仍然使用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Use this field for an additional env file with a non-standard name (e.g.",
+			"翻译": "当附加 env 文件名称非标准时使用此字段（例如",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Validate",
+			"翻译": "校验",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Validating...",
+			"翻译": "正在校验...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "via Hawser, but the file is managed locally.",
+			"翻译": "通过 Hawser，但文件在本地管理。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "via Hawser, but the files are managed locally.",
+			"翻译": "通过 Hawser，但文件在本地管理。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "View changelog",
+			"翻译": "查看更新日志",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "View compose file and dependency graph",
+			"翻译": "查看 compose 文件与依赖关系拓扑图",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "View logs",
+			"翻译": "查看日志",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Volume mounted to this service.",
+			"翻译": "挂载到此服务的存储卷。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Volumes",
+			"翻译": "存储卷",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Warnings",
+			"翻译": "警告",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Webhook secret",
+			"翻译": "Webhook 机密",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Webhook URL",
+			"翻译": "Webhook URL",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "What happens when you select a file:",
+			"翻译": "选择文件后会发生什么:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "What will happen",
+			"翻译": "将会发生什么",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Working directory for Docker Compose, relative to the repository root. All files in this directory will be available for volume mounts and build contexts.",
+			"翻译": "Docker Compose 的工作目录，相对于仓库根目录。此目录下的所有文件均可用于存储卷挂载和构建上下文。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Would you like to move all files to the new location, or leave them in place?",
+			"翻译": "是否将所有文件移动到新位置，还是保留在原地？",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "YAML Parse Error",
+			"翻译": "YAML 解析错误",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "You can now customize values before deploying",
+			"翻译": "在部署前你现在可以自定义变量值",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "You have unsaved changes. Are you sure you want to close without saving?",
+			"翻译": "你有未保存的更改。确定要在不保存的情况下关闭吗？",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "You've changed the stack location. There",
+			"翻译": "你更改了应用栈位置。此处",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Search app logos (plex, jellyfin, grafana...)",
+			"翻译": "搜索应用图标 (plex, jellyfin, grafana...)",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Search icons...",
+			"翻译": "搜索图标...",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Search stacks...",
+			"翻译": "搜索应用栈...",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": ".env",
+			"翻译": ".env (环境配置文件)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "nginx:alpine",
+			"翻译": "例如 nginx:alpine",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 2
+		},
+		{
+			"原文": "--build",
+			"翻译": "--build (强制构建镜像)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "--no-cache",
+			"翻译": "--no-cache (禁用缓存构建)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": ":latest",
+			"翻译": ":latest (最新稳定版)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": ".env:",
+			"翻译": ".env:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": ".env.production",
+			"翻译": ".env.production (生产环境配置)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "e.g., my-app",
+			"翻译": "例如 my-app",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "e.g., my-stacks",
+			"翻译": "例如 my-stacks",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "IPvlan",
+			"翻译": "IPvlan (IP 虚拟局域网)",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "IPvlan",
+			"翻译": "IPvlan (IP 虚拟局域网)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "key=value\nanother=setting",
+			"翻译": "键=值\n另一个=设置",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "local",
+			"翻译": "local (本地驱动)",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Macvlan",
+			"翻译": "Macvlan (MAC 虚拟局域网)",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "Macvlan",
+			"翻译": "Macvlan (MAC 虚拟局域网)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "main",
+			"翻译": "main (默认分支)",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "my-external-config",
+			"翻译": "例如 my-external-config",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "my-external-secret",
+			"翻译": "例如 my-external-secret",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "my-stack",
+			"翻译": "例如 my-stack",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Overlay",
+			"翻译": "Overlay (覆盖网络)",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "Overlay",
+			"翻译": "Overlay (覆盖网络)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "selfh.st",
+			"翻译": "selfh.st (开源自托管图标库)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		}
+	]
+}

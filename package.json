@@ -1,0 +1,23 @@
+{
+	"name": "dockhand_zh",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"scan": "tsx 脚本/scan.ts",
+		"scan:fe": "tsx 脚本/scan.ts --前端",
+		"scan:pending": "tsx 脚本/scan.ts --前端 --待译",
+		"apply": "tsx 脚本/apply.ts",
+		"gen-dicts": "tsx 脚本/gen-dicts.ts",
+		"migrate:v1": "tsx 脚本/migrate-v1.ts",
+		"stats": "tsx 脚本/stats.ts",
+		"check": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@types/node": "^22.10.0",
+		"magic-string": "^0.30.17",
+		"svelte": "^5.56.10",
+		"tsx": "^4.23.1",
+		"typescript": "^5.9.3"
+	}
+}

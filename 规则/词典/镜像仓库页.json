@@ -1,0 +1,394 @@
+{
+	"scope": "src/routes/registry",
+	"entries": [
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		},
+		{
+			"原文": "auth",
+			"翻译": "认证",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Browse",
+			"翻译": "浏览",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Search",
+			"翻译": "搜索",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Actions",
+			"翻译": "操作",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "and use the filter to find images.",
+			"翻译": "并使用筛选器查找镜像。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Auto",
+			"翻译": "自动",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Configure",
+			"翻译": "配置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Copy requires HTTPS",
+			"翻译": "复制功能需要 HTTPS",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Copy to another registry",
+			"翻译": "复制到其他仓库",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Copy to clipboard",
+			"翻译": "复制到剪贴板",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Copy to registry",
+			"翻译": "复制到仓库",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Critical/high vulnerabilities found",
+			"翻译": "发现严重/高危漏洞",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Delete tag",
+			"翻译": "删除标签",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Delete this tag",
+			"翻译": "删除此标签",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Description",
+			"翻译": "描述",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Filter results...",
+			"翻译": "筛选结果...",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Image name/tag",
+			"翻译": "镜像名称/标签",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Load more images",
+			"翻译": "加载更多镜像",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Loading more...",
+			"翻译": "正在加载更多...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Loading tags...",
+			"翻译": "正在加载标签...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Loading...",
+			"翻译": "加载中...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Manage registries",
+			"翻译": "管理仓库",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Modified",
+			"翻译": "修改时间",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "myimage:latest",
+			"翻译": "myimage:latest",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Name",
+			"翻译": "名称",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No tags found",
+			"翻译": "未找到标签",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No target registries available. Add a private registry in Settings.",
+			"翻译": "没有可用的目标仓库。请在设置中添加私有仓库。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "of",
+			"翻译": "/",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Official",
+			"翻译": "官方",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Pull",
+			"翻译": "拉取",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Push",
+			"翻译": "推送",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Registry",
+			"翻译": "仓库",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Registry - Dockhand",
+			"翻译": "仓库 - Dockhand",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Retry pull",
+			"翻译": "重试拉取",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Retry push",
+			"翻译": "重试推送",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Retry scan",
+			"翻译": "重试扫描",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Run container with this tag",
+			"翻译": "使用此标签运行容器",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Scan",
+			"翻译": "扫描",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Search or browse",
+			"翻译": "搜索或浏览",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Select registry",
+			"翻译": "选择仓库",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Size",
+			"翻译": "大小",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Source image",
+			"翻译": "源镜像",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Stars",
+			"翻译": "星标数",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Start copy",
+			"翻译": "开始复制",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Tag",
+			"翻译": "打标签",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "tags loaded",
+			"翻译": "个标签已加载",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Target registry",
+			"翻译": "目标仓库",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Tip: Large registries don't support search. Try",
+			"翻译": "提示: 大型仓库不支持全局搜索。请尝试",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "to find and pull images",
+			"翻译": "以查找并拉取镜像",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "to find images",
+			"翻译": "以查找镜像",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Type",
+			"翻译": "类型",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "vulnerabilities found",
+			"翻译": "个漏洞已发现",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Will be pushed as:",
+			"翻译": "将推送为:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		}
+	]
+}

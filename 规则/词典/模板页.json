@@ -1,0 +1,258 @@
+{
+	"scope": "src/routes/templates",
+	"entries": [
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		},
+		{
+			"原文": "Add",
+			"翻译": "添加",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Add source",
+			"翻译": "添加来源",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "All categories",
+			"翻译": "全部分类",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "All sources",
+			"翻译": "全部来源",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "All sources are reachable",
+			"翻译": "所有来源均可访问",
+			"kind": "str",
+			"context": "call:toast.success",
+			"n": 1
+		},
+		{
+			"原文": "Browse",
+			"翻译": "浏览",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "categories",
+			"翻译": "个分类",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Clear filters",
+			"翻译": "清除筛选",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Configure template catalog sources. Templates are fetched and cached for 1 hour.",
+			"翻译": "配置模板目录来源。模板会抓取并缓存 1 小时。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Details",
+			"翻译": "详情",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Disable inactive",
+			"翻译": "禁用未启用源",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Failed to add source",
+			"翻译": "添加来源失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to fetch",
+			"翻译": "抓取失败",
+			"kind": "str",
+			"context": "new:Error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to load library templates",
+			"翻译": "加载模板库失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to load template sources",
+			"翻译": "加载模板来源失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to remove source",
+			"翻译": "移除来源失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to update source",
+			"翻译": "更新来源失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Loading sources...",
+			"翻译": "正在加载来源...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "My templates",
+			"翻译": "我的模板",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Name",
+			"翻译": "名称",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Open the detailed guide on portainer-templates.as93.net",
+			"翻译": "在 portainer-templates.as93.net 查看详细指南",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Project",
+			"翻译": "项目",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Refresh templates",
+			"翻译": "刷新模板",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Search templates...",
+			"翻译": "搜索模板...",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Source added",
+			"翻译": "来源已添加",
+			"kind": "str",
+			"context": "call:toast.success",
+			"n": 1
+		},
+		{
+			"原文": "Source removed",
+			"翻译": "来源已移除",
+			"kind": "str",
+			"context": "call:toast.success",
+			"n": 1
+		},
+		{
+			"原文": "sources",
+			"翻译": "个来源",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Sources",
+			"翻译": "来源",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Templates",
+			"翻译": "模板",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Templates - Dockhand",
+			"翻译": "模板 - Dockhand",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "templates)",
+			"翻译": "个模板)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Validate",
+			"翻译": "校验",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Validating...",
+			"翻译": "正在校验...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		}
+	]
+}

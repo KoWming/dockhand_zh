@@ -1,0 +1,673 @@
+{
+	"scope": "src/routes/volumes",
+	"entries": [
+		{
+			"原文": "Create a volume to persist container data",
+			"翻译": "创建一个存储卷以持久化容器数据",
+			"kind": "attr",
+			"attr": "description"
+		},
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		},
+		{
+			"原文": "Creating...",
+			"翻译": "正在创建...",
+			"kind": "str"
+		},
+		{
+			"原文": "Create volume",
+			"翻译": "创建存储卷",
+			"kind": "str"
+		},
+		{
+			"原文": "Key",
+			"翻译": "键",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 4
+		},
+		{
+			"原文": "Add option",
+			"翻译": "添加选项",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Driver options",
+			"翻译": "驱动选项",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Additional options",
+			"翻译": "附加选项",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Driver",
+			"翻译": "驱动",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Extra mount options appended to the mount string",
+			"翻译": "追加到挂载字符串的额外挂载选项",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Failed to prune volumes",
+			"翻译": "清理存储卷失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 2
+		},
+		{
+			"原文": "Labels",
+			"翻译": "标签",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "No driver options configured",
+			"翻译": "未配置驱动选项",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Read-only",
+			"翻译": "只读",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Server / IP *",
+			"翻译": "服务器 / IP *",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Value",
+			"翻译": "值",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 2
+		},
+		{
+			"原文": "Value (optional)",
+			"翻译": "值(可选)",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 2
+		},
+		{
+			"原文": "- editing disabled",
+			"翻译": "- 编辑已禁用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Add label",
+			"翻译": "添加标签",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Basic information",
+			"翻译": "基本信息",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Browse files",
+			"翻译": "浏览文件",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Browse volume",
+			"翻译": "浏览存储卷",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Browse, edit, and manage files in the volume.",
+			"翻译": "浏览、编辑和管理存储卷中的文件。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Clear",
+			"翻译": "清空",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Clone",
+			"翻译": "克隆",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Clone volume",
+			"翻译": "克隆存储卷",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Clone volume",
+			"翻译": "克隆存储卷",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Create",
+			"翻译": "创建",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Create a new volume with the same driver and options as \"",
+			"翻译": "使用与以下存储卷相同的驱动和选项创建新存储卷: \"",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Create volume",
+			"翻译": "创建存储卷",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Created",
+			"翻译": "已创建",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Default local driver",
+			"翻译": "默认 local 驱动",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "Domain",
+			"翻译": "域",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Driver",
+			"翻译": "驱动",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Enter new volume name",
+			"翻译": "输入新存储卷名称",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Export path *",
+			"翻译": "导出路径 *",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Failed to fetch volume details",
+			"翻译": "获取存储卷详情失败",
+			"kind": "str",
+			"context": "new:Error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to load volumes",
+			"翻译": "加载存储卷列表失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to remove volume",
+			"翻译": "删除存储卷失败",
+			"kind": "str",
+			"context": "prop:message",
+			"n": 1
+		},
+		{
+			"原文": "In use",
+			"翻译": "使用中",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Local",
+			"翻译": "本地",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "mount",
+			"翻译": "挂载",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Mountpoint",
+			"翻译": "挂载点",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "my-volume",
+			"翻译": "my-volume",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Name",
+			"翻译": "名称",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Network file system",
+			"翻译": "网络文件系统(NFS)",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "New volume name",
+			"翻译": "新存储卷名称",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "NFS version",
+			"翻译": "NFS 版本",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "NFSv3",
+			"翻译": "NFSv3",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "NFSv4",
+			"翻译": "NFSv4",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "NFSv4.1",
+			"翻译": "NFSv4.1",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "NFSv4.2",
+			"翻译": "NFSv4.2",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "No labels configured",
+			"翻译": "未配置标签",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No lock",
+			"翻译": "无锁",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No volumes found",
+			"翻译": "未找到存储卷",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Note:",
+			"翻译": "注意:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Note: This creates an empty volume with the same configuration. To copy data, use the Export feature on the source volume and import into the new volume.",
+			"翻译": "注意:此操作会创建一个配置相同的空存储卷。如需复制数据,请在源存储卷上使用导出功能,再导入到新存储卷。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Open stack \"",
+			"翻译": "打开应用栈 \"",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Optional AD/workgroup domain",
+			"翻译": "可选:AD/工作组域",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Password",
+			"翻译": "密码",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Prune",
+			"翻译": "清理",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Prune volumes",
+			"翻译": "清理存储卷",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Refresh",
+			"翻译": "刷新",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Remove",
+			"翻译": "移除",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Removing this volume will permanently delete all data stored in it.\n\t\t\t\t\t\tMake sure no containers are using this volume before removal.",
+			"翻译": "删除此存储卷将永久删除其中存储的所有数据。删除前请确保没有容器正在使用此存储卷。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Scope",
+			"翻译": "作用域",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Search volumes...",
+			"翻译": "搜索存储卷...",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Select driver",
+			"翻译": "选择驱动",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "selected",
+			"翻译": "项已选择",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Share path *",
+			"翻译": "共享路径 *",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "shared/folder",
+			"翻译": "shared/folder",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "SMB 2.0",
+			"翻译": "SMB 2.0",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "SMB 2.1",
+			"翻译": "SMB 2.1",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "SMB 3.0",
+			"翻译": "SMB 3.0",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "SMB 3.1.1",
+			"翻译": "SMB 3.1.1",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "SMB version",
+			"翻译": "SMB 版本",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Status",
+			"翻译": "状态",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "The location on the host where the volume data is stored",
+			"翻译": "存储卷数据在宿主机上的存储位置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Unused",
+			"翻译": "未使用",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Unused volumes pruned",
+			"翻译": "已清理未使用的存储卷",
+			"kind": "str",
+			"context": "call:toast.success",
+			"n": 1
+		},
+		{
+			"原文": "Usage",
+			"翻译": "使用情况",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "user",
+			"翻译": "user",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Username",
+			"翻译": "用户名",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "View details",
+			"翻译": "查看详情",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Volume",
+			"翻译": "存储卷",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Volume driver to use (local is default)",
+			"翻译": "要使用的存储卷驱动(local 为默认)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Volume is in use by:",
+			"翻译": "此存储卷正被以下容器使用:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Volume name *",
+			"翻译": "存储卷名称 *",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Volumes",
+			"翻译": "存储卷",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Volumes - Dockhand",
+			"翻译": "存储卷 - Dockhand",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Windows/SMB shares",
+			"翻译": "Windows/SMB 共享",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		}
+	]
+}

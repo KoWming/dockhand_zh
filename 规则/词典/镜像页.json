@@ -1,0 +1,990 @@
+{
+	"scope": "src/routes/images",
+	"entries": [
+		{
+			"原文": "Pull an image from a registry to get started",
+			"翻译": "从镜像仓库拉取镜像以开始使用",
+			"kind": "attr",
+			"attr": "description"
+		},
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		},
+		{
+			"原文": "Vulnerabilities",
+			"翻译": "漏洞",
+			"kind": "str"
+		},
+		{
+			"原文": "Images",
+			"翻译": "镜像",
+			"kind": "str"
+		},
+		{
+			"原文": "Load from tar",
+			"翻译": "从 tar 加载",
+			"kind": "str"
+		},
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 4
+		},
+		{
+			"原文": "Unused",
+			"翻译": "未使用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 4
+		},
+		{
+			"原文": "Some unused",
+			"翻译": "部分未使用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "All",
+			"翻译": "全部",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Critical",
+			"翻译": "严重",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Export",
+			"翻译": "导出",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "High",
+			"翻译": "高危",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "In use",
+			"翻译": "使用中",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Low",
+			"翻译": "低危",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Medium",
+			"翻译": "中危",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Push",
+			"翻译": "推送",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Push to registry",
+			"翻译": "推送到镜像仓库",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "Refresh",
+			"翻译": "刷新",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Run container",
+			"翻译": "运行容器",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "Scan for vulnerabilities",
+			"翻译": "扫描漏洞",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "Tag",
+			"翻译": "打标签",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Add a new tag to",
+			"翻译": "添加新标签至",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "All containers",
+			"翻译": "所有容器",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "All images",
+			"翻译": "所有镜像",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "All severities",
+			"翻译": "所有严重程度",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "All stacks",
+			"翻译": "所有应用栈",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "auth",
+			"翻译": "认证",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Cancelling…",
+			"翻译": "正在取消…",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "clean",
+			"翻译": "纯净",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Clear",
+			"翻译": "清空",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Click \"Scan all images\" to populate this view.",
+			"翻译": "点击“扫描所有镜像”以填充此视图。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Command",
+			"翻译": "命令",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Comment",
+			"翻译": "注释",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Complete!",
+			"翻译": "已完成！",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Configure",
+			"翻译": "配置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Configure a scanner in settings",
+			"翻译": "在设置中配置扫描器",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "container",
+			"翻译": "容器",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Created",
+			"翻译": "已创建",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Critical",
+			"翻译": "严重",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "CSV spreadsheet (.csv)",
+			"翻译": "CSV 表格 (.csv)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "CVE ID",
+			"翻译": "CVE 编号",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Export findings",
+			"翻译": "导出发现项",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "failed",
+			"翻译": "失败",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Failed",
+			"翻译": "失败",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Failed to delete image",
+			"翻译": "删除镜像失败",
+			"kind": "str",
+			"context": "prop:message",
+			"n": 1
+		},
+		{
+			"原文": "Failed to fetch image history",
+			"翻译": "获取镜像历史失败",
+			"kind": "str",
+			"context": "new:Error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to load images",
+			"翻译": "加载镜像列表失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to prune images",
+			"翻译": "清理镜像失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to prune unused images",
+			"翻译": "清理未使用的镜像失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to start pull",
+			"翻译": "启动拉取失败",
+			"kind": "str",
+			"context": "new:Error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to tag image",
+			"翻译": "镜像打标签失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "finding",
+			"翻译": "个发现项",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Fixed in",
+			"翻译": "修复于版本",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Grype",
+			"翻译": "Grype",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Grype",
+			"翻译": "Grype",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "High",
+			"翻译": "高危",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "image",
+			"翻译": "镜像",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Image is up to date",
+			"翻译": "镜像已是最新",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Image layers:",
+			"翻译": "镜像层:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Image name/tag",
+			"翻译": "镜像名称/标签",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Images - Dockhand",
+			"翻译": "镜像 - Dockhand",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Images scanned:",
+			"翻译": "已扫描镜像:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Initializing...",
+			"翻译": "正在初始化...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Installed",
+			"翻译": "已安装",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "JSON data (.json)",
+			"翻译": "JSON 数据 (.json)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Layer stack (bottom to top) - click to expand",
+			"翻译": "镜像层堆栈（自底向上）- 点击展开",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Low",
+			"翻译": "低危",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Markdown report (.md)",
+			"翻译": "Markdown 报告 (.md)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Medium",
+			"翻译": "中危",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Negligible",
+			"翻译": "微不足道 (Negligible)",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Negligible",
+			"翻译": "微不足道 (Negligible)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No dangling images to prune",
+			"翻译": "没有需要清理的悬空镜像",
+			"kind": "str",
+			"context": "call:toast.success",
+			"n": 1
+		},
+		{
+			"原文": "No findings yet",
+			"翻译": "暂无发现项",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No fix",
+			"翻译": "暂无修复版本",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No images found",
+			"翻译": "未找到镜像",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "No layer history found",
+			"翻译": "未找到层历史",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No scan results available",
+			"翻译": "无可用扫描结果",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No target registries available. Add a private registry in Settings.",
+			"翻译": "没有可用的目标仓库。请在设置中添加私有仓库。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No unused images to prune",
+			"翻译": "没有需要清理的未使用镜像",
+			"kind": "str",
+			"context": "call:toast.success",
+			"n": 1
+		},
+		{
+			"原文": "No vulnerabilities",
+			"翻译": "无漏洞",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No vulnerabilities found.",
+			"翻译": "未发现漏洞。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No vulnerability scanner is configured for this environment.",
+			"翻译": "此环境未配置漏洞扫描器。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "on",
+			"翻译": "在",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Package",
+			"翻译": "软件包",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Preparing scan…",
+			"翻译": "正在准备扫描…",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Prune",
+			"翻译": "清理",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Prune dangling images",
+			"翻译": "清理悬空镜像",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Prune unused",
+			"翻译": "清理未使用项",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Prune unused images",
+			"翻译": "清理未使用镜像",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Pull",
+			"翻译": "拉取",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Push to registry",
+			"翻译": "推送到镜像仓库",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Remove",
+			"翻译": "移除",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Remove ALL images not used by any container (including tagged images)",
+			"翻译": "移除所有未被任何容器使用的镜像（包括具名标签镜像）",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Remove untagged intermediate layers (dangling images)",
+			"翻译": "移除未打标签的中间层（悬空镜像）",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Repository name",
+			"翻译": "仓库名称",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Retry",
+			"翻译": "重试",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Retry push",
+			"翻译": "重试推送",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Running the configured scanner across all images. This can take a while.",
+			"翻译": "正在对所有镜像运行配置的扫描器。这可能需要一些时间。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "SARIF (.sarif)",
+			"翻译": "SARIF 报告 (.sarif)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Scan all images",
+			"翻译": "扫描所有镜像",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Scan cancelled.",
+			"翻译": "扫描已取消。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Scan complete.",
+			"翻译": "扫描完成。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Scanned",
+			"翻译": "已扫描",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Scanning",
+			"翻译": "正在扫描",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Scanning images",
+			"翻译": "正在扫描镜像",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Scanning...",
+			"翻译": "正在扫描...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Search CVE, package, image, container, stack...",
+			"翻译": "搜索 CVE、软件包、镜像、容器、应用栈...",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Search images...",
+			"翻译": "搜索镜像...",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Select registry",
+			"翻译": "选择镜像仓库",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "selected",
+			"翻译": "已选择",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Severity",
+			"翻译": "严重级别",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Size",
+			"翻译": "大小",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Some tags are unused",
+			"翻译": "部分标签未使用",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Source image",
+			"翻译": "源镜像",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Tag image",
+			"翻译": "打标签",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Tag image",
+			"翻译": "打标签",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Tagging...",
+			"翻译": "正在打标签...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Tags",
+			"翻译": "标签",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Target registry",
+			"翻译": "目标仓库",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "The scan did not finish successfully.",
+			"翻译": "扫描未能成功完成。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "total",
+			"翻译": "共计",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Total layers:",
+			"翻译": "总层数:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Total size:",
+			"翻译": "总大小:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Total:",
+			"翻译": "总计:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Trivy",
+			"翻译": "Trivy",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Trivy",
+			"翻译": "Trivy",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Unknown",
+			"翻译": "未知",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Unknown",
+			"翻译": "未知",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "View containers using this image",
+			"翻译": "查看使用此镜像的容器",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "View layers",
+			"翻译": "查看镜像层",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Vulnerability scan",
+			"翻译": "漏洞扫描",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Waiting for first result…",
+			"翻译": "正在等待首个结果…",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Will be pushed as:",
+			"翻译": "将推送为:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Pulling...",
+			"翻译": "正在拉取...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "e.g., latest, v1.0.0",
+			"翻译": "例如 latest, v1.0.0",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "e.g., myregistry/myimage",
+			"翻译": "例如 myregistry/myimage",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "myimage:latest",
+			"翻译": "例如 myimage:latest",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		}
+	]
+}

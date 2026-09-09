@@ -1,0 +1,1064 @@
+{
+	"scope": "src/routes/networks",
+	"entries": [
+		{
+			"原文": "Create a network to connect containers",
+			"翻译": "创建一个网络以连接容器",
+			"kind": "attr",
+			"attr": "description"
+		},
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		},
+		{
+			"原文": "Add",
+			"翻译": "添加",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 4
+		},
+		{
+			"原文": "Driver",
+			"翻译": "驱动",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 4
+		},
+		{
+			"原文": "Gateway",
+			"翻译": "网关",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Key",
+			"翻译": "键",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Labels",
+			"翻译": "标签",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Value",
+			"翻译": "值",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Attachable",
+			"翻译": "允许附加 (Attachable)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "Create network",
+			"翻译": "创建网络",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Driver options",
+			"翻译": "驱动选项",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Failed to prune networks",
+			"翻译": "清理网络失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 2
+		},
+		{
+			"原文": "Internal network",
+			"翻译": "内部网络",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "IPAM configuration",
+			"翻译": "IPAM 配置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Mode",
+			"翻译": "模式",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Parent interface (e.g., eth0)",
+			"翻译": "父接口(例如 eth0)",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 2
+		},
+		{
+			"原文": "Subnet",
+			"翻译": "子网",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "All containers are already connected to this network.",
+			"翻译": "所有容器均已连接到此网络。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Allocate container IPs from a sub-range of the subnet",
+			"翻译": "从子网的子网段中为容器分配 IP",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Allow manual container attachment (overlay networks)",
+			"翻译": "允许手动接入容器(overlay 网络)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Assign MAC address to containers",
+			"翻译": "为容器分配 MAC 地址",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "Auxiliary addresses",
+			"翻译": "辅助地址",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Basic",
+			"翻译": "基础",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Basic information",
+			"翻译": "基本信息",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Bridge",
+			"翻译": "网桥 (Bridge)",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Bridge (default)",
+			"翻译": "桥接(默认)",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "Bridge (default)",
+			"翻译": "桥接(默认)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Bridge device name",
+			"翻译": "网桥设备名",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "built-in",
+			"翻译": "内置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Change layout",
+			"翻译": "更改布局",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Circle",
+			"翻译": "环形",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Circle",
+			"翻译": "环形",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Clear",
+			"翻译": "清空",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Common options for",
+			"翻译": "常用选项 —",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "configuration (required)",
+			"翻译": "配置(必填)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Configure a new Docker network with custom settings.",
+			"翻译": "使用自定义设置配置新的 Docker 网络。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Connect",
+			"翻译": "连接",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Connect container",
+			"翻译": "连接容器",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Connect container to",
+			"翻译": "将容器连接到",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Connected containers (",
+			"翻译": "已连接容器(",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Container",
+			"翻译": "容器",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Container Id",
+			"翻译": "容器 ID",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Copy network ID",
+			"翻译": "复制网络 ID",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Create",
+			"翻译": "创建",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Created",
+			"翻译": "已创建",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Creating...",
+			"翻译": "正在创建...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "default",
+			"翻译": "默认",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "default",
+			"翻译": "默认",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Default network driver",
+			"翻译": "默认网络驱动",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "Disable networking",
+			"翻译": "禁用网络",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "Driver",
+			"翻译": "驱动",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "driver:",
+			"翻译": "驱动:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Duplicate network",
+			"翻译": "复制网络",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Enable encryption (true/false)",
+			"翻译": "启用加密(true/false)",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "Enable inter-container communication (true/false)",
+			"翻译": "启用容器间通信(true/false)",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "Enable IP masquerading (true/false)",
+			"翻译": "启用 IP 伪装(true/false)",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "Enable IPv6",
+			"翻译": "启用 IPv6",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Enable IPv6 networking",
+			"翻译": "启用 IPv6 网络",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "External network",
+			"翻译": "外部网络",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Failed to connect container",
+			"翻译": "连接容器失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to copy ID",
+			"翻译": "复制 ID 失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to disconnect container",
+			"翻译": "断开容器连接失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to duplicate network",
+			"翻译": "复制网络失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to fetch network details",
+			"翻译": "获取网络详情失败",
+			"kind": "str",
+			"context": "new:Error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to load networks",
+			"翻译": "加载网络列表失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to remove network",
+			"翻译": "删除网络失败",
+			"kind": "str",
+			"context": "prop:message",
+			"n": 1
+		},
+		{
+			"原文": "Flag: bridge, private, vepa",
+			"翻译": "标志:bridge、private、vepa",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "Force",
+			"翻译": "强制",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Force",
+			"翻译": "强制",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Gateway:",
+			"翻译": "网关:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Grid",
+			"翻译": "网格",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Grid",
+			"翻译": "网格",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Host",
+			"翻译": "主机",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Host binding IPv4 address",
+			"翻译": "主机绑定的 IPv4 地址",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "Hostname",
+			"翻译": "主机名",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "ID",
+			"翻译": "ID",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "internal",
+			"翻译": "内部",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Internal",
+			"翻译": "内部",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "IP",
+			"翻译": "IP",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "IP Address Management driver (default: default)",
+			"翻译": "IP 地址管理(IPAM)驱动(默认:default)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "IP range",
+			"翻译": "IP 范围",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "IP Range:",
+			"翻译": "IP 范围:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "IPAM driver",
+			"翻译": "IPAM 驱动",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "IPAM options",
+			"翻译": "IPAM 选项",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "IPvlan",
+			"翻译": "IPvlan",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "IPvlan L2/L3 networking",
+			"翻译": "IPvlan L2/L3 网络",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "L2 (default)",
+			"翻译": "L2(默认)",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "L2 (default)",
+			"翻译": "L2(默认)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "L3",
+			"翻译": "L3",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "L3",
+			"翻译": "L3",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Macvlan",
+			"翻译": "Macvlan",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Mode: bridge, private, vepa, passthru",
+			"翻译": "模式:bridge、private、vepa、passthru",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "Mode: l2, l3, l3s",
+			"翻译": "模式:l2、l3、l3s",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "MTU size",
+			"翻译": "MTU 大小",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "Name",
+			"翻译": "名称",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Network",
+			"翻译": "网络",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Network",
+			"翻译": "网络",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Network ID copied to clipboard",
+			"翻译": "网络 ID 已复制到剪贴板",
+			"kind": "str",
+			"context": "call:toast.success",
+			"n": 1
+		},
+		{
+			"原文": "Network name *",
+			"翻译": "网络名称 *",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Networks",
+			"翻译": "网络",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Networks - Dockhand",
+			"翻译": "网络 - Dockhand",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No containers available to connect.",
+			"翻译": "没有可连接的容器。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No containers connected to this network",
+			"翻译": "此网络上没有已连接的容器",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No labels configured",
+			"翻译": "未配置标签",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No networks found",
+			"翻译": "未找到网络",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "None",
+			"翻译": "无",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Options",
+			"翻译": "选项",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Overlay",
+			"翻译": "Overlay",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Parent interface *",
+			"翻译": "父接口 *",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Passthru",
+			"翻译": "直通",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "Passthru",
+			"翻译": "直通",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Please fix the validation errors above",
+			"翻译": "请修正上方的校验错误",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Private",
+			"翻译": "私有",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "Private",
+			"翻译": "私有",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Prune",
+			"翻译": "清理",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Prune networks",
+			"翻译": "清理网络",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Radial",
+			"翻译": "放射状",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Radial",
+			"翻译": "放射状",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Refresh",
+			"翻译": "刷新",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Remove",
+			"翻译": "移除",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Reserve IP addresses for network devices (e.g., host=192.168.1.1)",
+			"翻译": "为网络设备保留 IP 地址(例如 host=192.168.1.1)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Restrict external access to this network",
+			"翻译": "限制此网络的外部访问",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Scope",
+			"翻译": "作用域",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Scope",
+			"翻译": "作用域",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Search networks...",
+			"翻译": "搜索网络...",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Select a container to connect to this network.",
+			"翻译": "选择要连接到此网络的容器。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Select a container...",
+			"翻译": "选择容器...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "selected",
+			"翻译": "已选择",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Service",
+			"翻译": "服务",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Service connected to this network.",
+			"翻译": "连接到此网络的服务。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Set driver-specific options (-o key=value)",
+			"翻译": "设置驱动特定选项(-o key=value)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Set metadata labels on the network",
+			"翻译": "为网络设置元数据标签",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Subnet *",
+			"翻译": "子网 *",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Subnet:",
+			"翻译": "子网:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Subnets",
+			"翻译": "子网",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Swarm multi-host networking",
+			"翻译": "Swarm 多主机网络",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "Tree",
+			"翻译": "树形",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Tree",
+			"翻译": "树形",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Unused networks pruned",
+			"翻译": "已清理未使用的网络",
+			"kind": "str",
+			"context": "call:toast.success",
+			"n": 1
+		},
+		{
+			"原文": "Use host networking directly",
+			"翻译": "直接使用宿主机网络",
+			"kind": "str",
+			"context": "prop:description",
+			"n": 1
+		},
+		{
+			"原文": "View details",
+			"翻译": "查看详情",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "View Graph",
+			"翻译": "查看拓扑图",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "View network connections between containers",
+			"翻译": "查看容器间的网络连接",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "View network graph",
+			"翻译": "查看网络拓扑图",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "my-network",
+			"翻译": "例如 my-network",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		}
+	]
+}

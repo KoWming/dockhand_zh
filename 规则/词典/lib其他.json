@@ -1,0 +1,610 @@
+{
+	"scope": "src/lib",
+	"entries": [
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		},
+		{
+			"原文": "Name",
+			"翻译": "名称",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 8
+		},
+		{
+			"原文": "Environment",
+			"翻译": "环境",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 6
+		},
+		{
+			"原文": "Image",
+			"翻译": "镜像",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 4
+		},
+		{
+			"原文": "Status",
+			"翻译": "状态",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 4
+		},
+		{
+			"原文": "Type",
+			"翻译": "类型",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 4
+		},
+		{
+			"原文": "Containers",
+			"翻译": "容器",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 3
+		},
+		{
+			"原文": "Memory",
+			"翻译": "内存",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 3
+		},
+		{
+			"原文": "Schedule",
+			"翻译": "计划",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 3
+		},
+		{
+			"原文": "Stack",
+			"翻译": "应用栈",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 3
+		},
+		{
+			"原文": "Action",
+			"翻译": "操作",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Container",
+			"翻译": "容器",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Container or stack backup",
+			"翻译": "容器或应用栈备份",
+			"kind": "str",
+			"context": "prop:hint",
+			"n": 2
+		},
+		{
+			"原文": "Created",
+			"翻译": "已创建",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "cron",
+			"翻译": "Cron",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Disk I/O",
+			"翻译": "磁盘 I/O",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Driver",
+			"翻译": "驱动",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Failed to load containers",
+			"翻译": "加载容器失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 2
+		},
+		{
+			"原文": "Net I/O",
+			"翻译": "网络 I/O",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Repository",
+			"翻译": "仓库",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Scope",
+			"翻译": "作用域",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Size",
+			"翻译": "大小",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Snapshots",
+			"翻译": "快照",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Timestamp",
+			"翻译": "时间戳",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Used by",
+			"翻译": "被使用于",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Volumes",
+			"翻译": "存储卷",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Ash (Alpine)",
+			"翻译": "Ash (Alpine)",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Auto-update",
+			"翻译": "自动更新",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Auto-update enabled",
+			"翻译": "已启用自动更新",
+			"kind": "str",
+			"context": "prop:tooltip",
+			"n": 1
+		},
+		{
+			"原文": "Backup destination (S3, REST, local, etc.)",
+			"翻译": "备份目标 (S3、REST、本地等)",
+			"kind": "str",
+			"context": "prop:hint",
+			"n": 1
+		},
+		{
+			"原文": "Bash",
+			"翻译": "Bash",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Block if more than current",
+			"翻译": "当漏洞多于当前版本时阻止",
+			"kind": "str",
+			"context": "prop:title",
+			"n": 1
+		},
+		{
+			"原文": "Block on any vulnerability",
+			"翻译": "发现任何漏洞时阻止",
+			"kind": "str",
+			"context": "prop:title",
+			"n": 1
+		},
+		{
+			"原文": "Block on critical only",
+			"翻译": "仅发现严重漏洞时阻止",
+			"kind": "str",
+			"context": "prop:title",
+			"n": 1
+		},
+		{
+			"原文": "Block on critical or high",
+			"翻译": "发现严重或高危漏洞时阻止",
+			"kind": "str",
+			"context": "prop:title",
+			"n": 1
+		},
+		{
+			"原文": "Connection",
+			"翻译": "连接",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Container default",
+			"翻译": "容器默认",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "daily",
+			"翻译": "每日",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Entity",
+			"翻译": "实体",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Events",
+			"翻译": "事件",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Exit",
+			"翻译": "退出",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Fixed version",
+			"翻译": "修复版本",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Gateway",
+			"翻译": "网关",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Git-stack webhook id and URL (for wiring Gitea/GitHub/GitLab)",
+			"翻译": "Git 应用栈 Webhook ID 与 URL（用于对接 Gitea/GitHub/GitLab）",
+			"kind": "str",
+			"context": "prop:hint",
+			"n": 1
+		},
+		{
+			"原文": "Health",
+			"翻译": "健康",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Host",
+			"翻译": "主机",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "ID",
+			"翻译": "ID",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Images",
+			"翻译": "镜像",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Installed version",
+			"翻译": "已安装版本",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "IP",
+			"翻译": "IP",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "IP address",
+			"翻译": "IP 地址",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Labels",
+			"翻译": "标签",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Last backup",
+			"翻译": "上次备份",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Last backup status",
+			"翻译": "上次备份状态",
+			"kind": "str",
+			"context": "prop:hint",
+			"n": 1
+		},
+		{
+			"原文": "Last run",
+			"翻译": "上次运行",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Latest",
+			"翻译": "最新",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Location",
+			"翻译": "位置",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Networks",
+			"翻译": "网络",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Next run",
+			"翻译": "下次运行",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "No result",
+			"翻译": "无结果",
+			"kind": "str",
+			"context": "prop:message",
+			"n": 1
+		},
+		{
+			"原文": "No vulnerability blocking",
+			"翻译": "不进行漏洞阻止",
+			"kind": "str",
+			"context": "prop:title",
+			"n": 1
+		},
+		{
+			"原文": "nobody",
+			"翻译": "nobody",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Nothing to add",
+			"翻译": "无添加内容",
+			"kind": "str",
+			"context": "new:Error",
+			"n": 1
+		},
+		{
+			"原文": "on",
+			"翻译": "在",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Package",
+			"翻译": "软件包",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Ports",
+			"翻译": "端口",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Restarts",
+			"翻译": "重启次数",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Retention",
+			"翻译": "保留策略",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "root",
+			"翻译": "root",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Scanned",
+			"翻译": "已扫描",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Severity",
+			"翻译": "严重级别",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Shell (sh)",
+			"翻译": "Shell (sh)",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Source",
+			"翻译": "来源",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Stacks",
+			"翻译": "应用栈",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "State",
+			"翻译": "状态",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Stats",
+			"翻译": "统计",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Subnet",
+			"翻译": "子网",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Tag",
+			"翻译": "打标签",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Tags",
+			"翻译": "标签",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Updated",
+			"翻译": "已更新",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Updates",
+			"翻译": "更新",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Uptime",
+			"翻译": "运行时间",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Usage",
+			"翻译": "使用情况",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "User",
+			"翻译": "用户",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Webhook",
+			"翻译": "Webhook",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Zsh",
+			"翻译": "Zsh",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		}
+	]
+}

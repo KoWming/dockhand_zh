@@ -1,0 +1,266 @@
+{
+	"scope": "src/routes",
+	"entries": [
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		},
+		{
+			"原文": "Add an environment to start managing your Docker hosts",
+			"翻译": "添加环境,开始管理你的 Docker 主机",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Add environment",
+			"翻译": "添加环境",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "All",
+			"翻译": "全部",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "All connections",
+			"翻译": "全部连接",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Clear filters",
+			"翻译": "清除筛选",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Compact",
+			"翻译": "紧凑",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Ctrl",
+			"翻译": "Ctrl",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Dashboard - Dockhand",
+			"翻译": "仪表盘 - Dockhand",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "days",
+			"翻译": "天后到期",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Detailed",
+			"翻译": "详细",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Direct",
+			"翻译": "直连",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Dockhand - Docker Management",
+			"翻译": "Dockhand - Docker 管理",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Edge",
+			"翻译": "Edge 边缘",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Environments",
+			"翻译": "环境",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Full",
+			"翻译": "完整",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Go to Settings",
+			"翻译": "前往设置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Layout options",
+			"翻译": "布局选项",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "License expired",
+			"翻译": "许可证已过期",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "License expires in",
+			"翻译": "许可证将于",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "License expires tomorrow",
+			"翻译": "许可证明天到期",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "List",
+			"翻译": "列表",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Live updates disconnected, reconnecting...",
+			"翻译": "实时更新已断开,正在重连...",
+			"kind": "str",
+			"context": "call:toast.warning",
+			"n": 1
+		},
+		{
+			"原文": "Live updates failed - refresh page to retry",
+			"翻译": "实时更新失败——刷新页面重试",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 1
+		},
+		{
+			"原文": "Live updates reconnected",
+			"翻译": "实时更新已恢复",
+			"kind": "str",
+			"context": "call:toast.success",
+			"n": 1
+		},
+		{
+			"原文": "Loading environments...",
+			"翻译": "正在加载环境...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No environments configured",
+			"翻译": "尚未配置环境",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No environments match the selected label filters",
+			"翻译": "没有符合所选标签筛选的环境",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No matching environments",
+			"翻译": "没有匹配的环境",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "of",
+			"翻译": "/",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Refresh",
+			"翻译": "刷新",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Search environments...",
+			"翻译": "搜索环境...",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Search...",
+			"翻译": "搜索...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Socket",
+			"翻译": "Socket 套接字",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Standard",
+			"翻译": "标准",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Standard",
+			"翻译": "标准",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		}
+	]
+}

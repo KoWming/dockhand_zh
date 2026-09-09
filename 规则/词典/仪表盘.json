@@ -1,0 +1,412 @@
+{
+	"scope": "src/routes/dashboard",
+	"entries": [
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		},
+		{
+			"原文": "Activity collection enabled",
+			"翻译": "活动采集已启用",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 7
+		},
+		{
+			"原文": "Vulnerability scanning enabled",
+			"翻译": "漏洞扫描已启用",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 7
+		},
+		{
+			"原文": "Direct Docker connection",
+			"翻译": "Docker 直连",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 6
+		},
+		{
+			"原文": "Edit environment settings",
+			"翻译": "编辑环境设置",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 6
+		},
+		{
+			"原文": "Hawser agent (edge mode)",
+			"翻译": "Hawser 代理(Edge 模式)",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 6
+		},
+		{
+			"原文": "Hawser agent (standard mode)",
+			"翻译": "Hawser 代理(标准模式)",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 6
+		},
+		{
+			"原文": "Metrics collection enabled",
+			"翻译": "指标采集已启用",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 6
+		},
+		{
+			"原文": "Unix socket connection",
+			"翻译": "Unix socket 连接",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 6
+		},
+		{
+			"原文": "Images",
+			"翻译": "镜像",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Memory",
+			"翻译": "内存",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Volumes",
+			"翻译": "存储卷",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Disk usage",
+			"翻译": "磁盘占用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "No metrics available",
+			"翻译": "无可用指标",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Pending updates",
+			"翻译": "待更新",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "Top containers by CPU",
+			"翻译": "CPU 占用最高的容器",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Total",
+			"翻译": "总计",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "All containers healthy",
+			"翻译": "所有容器运行正常",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Build cache",
+			"翻译": "构建缓存",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Build cache",
+			"翻译": "构建缓存",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Connecting to environment...",
+			"翻译": "正在连接环境...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Connecting...",
+			"翻译": "连接中...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Containers",
+			"翻译": "容器",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Containers",
+			"翻译": "容器",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "CPU & Memory history",
+			"翻译": "CPU 与内存历史",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Environment offline",
+			"翻译": "环境离线",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Events",
+			"翻译": "事件",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Images",
+			"翻译": "镜像",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Memory",
+			"翻译": "内存",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Metrics collection disabled",
+			"翻译": "指标采集已禁用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Networks",
+			"翻译": "网络",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No running containers",
+			"翻译": "无运行中的容器",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Offline",
+			"翻译": "离线",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Offline",
+			"翻译": "离线",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Paused",
+			"翻译": "已暂停",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Paused containers",
+			"翻译": "已暂停的容器",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Recent events",
+			"翻译": "近期事件",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "restarting",
+			"翻译": "个正在重启",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Restarting",
+			"翻译": "重启中",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Restarting containers",
+			"翻译": "重启中的容器",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Running",
+			"翻译": "运行中",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Running containers",
+			"翻译": "运行中的容器",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Stacks",
+			"翻译": "应用栈",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Stopped",
+			"翻译": "已停止",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Stopped containers",
+			"翻译": "已停止的容器",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "today",
+			"翻译": "今日",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "total",
+			"翻译": "共计",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Total containers",
+			"翻译": "容器总数",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "unhealthy",
+			"翻译": "个不健康",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Unhealthy",
+			"翻译": "不健康",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Unhealthy containers",
+			"翻译": "不健康的容器",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Volumes",
+			"翻译": "存储卷",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Auto-update enabled",
+			"翻译": "自动更新已启用",
+			"kind": "str",
+			"context": "title"
+		},
+		{
+			"原文": "Update check enabled (notify only)",
+			"翻译": "更新检查已启用(仅通知)",
+			"kind": "str",
+			"context": "title"
+		},
+		{
+			"原文": "Edge connection",
+			"翻译": "Edge 边缘连接",
+			"kind": "str",
+			"context": "title"
+		}
+	]
+}

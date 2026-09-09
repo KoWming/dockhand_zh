@@ -1,0 +1,270 @@
+{
+	"scope": "src/routes/terminal",
+	"entries": [
+		{
+			"原文": "Search running containers...",
+			"翻译": "搜索运行中的容器...",
+			"kind": "str"
+		},
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		},
+		{
+			"原文": "px",
+			"翻译": "px",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 6
+		},
+		{
+			"原文": "Connected",
+			"翻译": "已连接",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 4
+		},
+		{
+			"原文": "Copy output",
+			"翻译": "复制输出",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 3
+		},
+		{
+			"原文": "Disconnected",
+			"翻译": "已断开",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Reconnect",
+			"翻译": "重新连接",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 3
+		},
+		{
+			"原文": "Clear terminal (Ctrl+L)",
+			"翻译": "清空终端 (Ctrl+L)",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "Shell",
+			"翻译": "终端",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "Shell:",
+			"翻译": "Shell:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Terminal:",
+			"翻译": "终端:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "User:",
+			"翻译": "用户:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "(unavailable)",
+			"翻译": "(不可用)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Add user... (Enter)",
+			"翻译": "添加用户... (按 Enter)",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Ash (Alpine)",
+			"翻译": "Ash (Alpine)",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "Ash (Alpine)",
+			"翻译": "Ash (Alpine)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Bash",
+			"翻译": "Bash",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "Bash",
+			"翻译": "Bash",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Clear (Cmd+L)",
+			"翻译": "清空 (Cmd+L)",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Close terminal",
+			"翻译": "关闭终端",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "connected",
+			"翻译": "已连接",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Connecting...",
+			"翻译": "连接中...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Containers built from scratch or distroless images often don't include shells.",
+			"翻译": "从 scratch 或 distroless 镜像构建的容器通常不包含 Shell。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Detecting available shells...",
+			"翻译": "正在检测可用的 Shell...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Disconnect",
+			"翻译": "断开连接",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Loading terminal...",
+			"翻译": "正在加载终端...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No shell available in this container",
+			"翻译": "此容器中没有可用的 Shell",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Remove user",
+			"翻译": "移除用户",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Select a container to open shell",
+			"翻译": "选择要打开 Shell 的容器",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Shell (sh)",
+			"翻译": "Shell (sh)",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "Shell (sh)",
+			"翻译": "Shell (sh)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Terminal -",
+			"翻译": "终端 -",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Terminal - Dockhand",
+			"翻译": "终端 - Dockhand",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "This container may not have a shell installed.",
+			"翻译": "此容器可能未安装 Shell。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Zsh",
+			"翻译": "Zsh",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "Zsh",
+			"翻译": "Zsh",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		}
+	]
+}

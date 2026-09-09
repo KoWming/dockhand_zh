@@ -1,0 +1,2765 @@
+{
+	"scope": "src/lib/components",
+	"entries": [
+		{
+			"原文": "Theme: light",
+			"翻译": "主题: 浅色模式",
+			"kind": "str"
+		},
+		{
+			"原文": "Theme: dark",
+			"翻译": "主题: 深色模式",
+			"kind": "str"
+		},
+		{
+			"原文": "Theme: system",
+			"翻译": "主题: 跟随系统",
+			"kind": "str"
+		},
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		},
+		{
+			"原文": "Toggle log theme",
+			"翻译": "切换日志主题",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 5
+		},
+		{
+			"原文": "Check for updates",
+			"翻译": "检查更新",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 4
+		},
+		{
+			"原文": "environment:",
+			"翻译": "环境:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 4
+		},
+		{
+			"原文": "Output (",
+			"翻译": "输出 (",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 4
+		},
+		{
+			"原文": "secret",
+			"翻译": "机密",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 4
+		},
+		{
+			"原文": "compose file interpolation",
+			"翻译": "compose 文件插值",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "error",
+			"翻译": "错误",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "failed",
+			"翻译": "失败",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "from",
+			"翻译": "来自",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "lines)",
+			"翻译": "行)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Never block",
+			"翻译": "从不阻止",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "on",
+			"翻译": "在",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Pull",
+			"翻译": "拉取",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "section.",
+			"翻译": "部分。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "These variables are available for",
+			"翻译": "这些变量可用于",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "using",
+			"翻译": "使用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Actions",
+			"翻译": "操作",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Activity",
+			"翻译": "活动",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "and re-open this dialog.",
+			"翻译": "并重新打开此对话框。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Any vulnerabilities",
+			"翻译": "任何漏洞",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Audit log",
+			"翻译": "审计日志",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Backups",
+			"翻译": "备份",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "bind",
+			"翻译": "绑定挂载",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "cancelled",
+			"翻译": "已取消",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Checked",
+			"翻译": "已检查",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Clear",
+			"翻译": "清空",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Containers",
+			"翻译": "容器",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Critical only",
+			"翻译": "仅严重",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Critical or high",
+			"翻译": "严重或高危",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Custom",
+			"翻译": "自定义",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Daily",
+			"翻译": "每日",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Dashboard",
+			"翻译": "仪表盘",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Dockhand update available",
+			"翻译": "有 Dockhand 更新可用",
+			"kind": "attr",
+			"attr": "aria-label",
+			"context": "attr:aria-label",
+			"n": 2
+		},
+		{
+			"原文": "Environments > (edit) > Remote stack path (for backup)",
+			"翻译": "环境 > (编辑) > 远程应用栈路径 (用于备份)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Failed",
+			"翻译": "失败",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Failed to save navigation preference",
+			"翻译": "保存导航偏好设置失败",
+			"kind": "str",
+			"context": "call:toast.error",
+			"n": 2
+		},
+		{
+			"原文": "Global default (",
+			"翻译": "全局默认 (",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Image name",
+			"翻译": "镜像名称",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Images",
+			"翻译": "镜像",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Keep image",
+			"翻译": "保留镜像",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "layer",
+			"翻译": "层",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Logs",
+			"翻译": "日志",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Logs",
+			"翻译": "日志",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "More than current image",
+			"翻译": "多于当前镜像",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Networks",
+			"翻译": "网络",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "None — disabled",
+			"翻译": "无 — 已禁用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "not shown.",
+			"翻译": "未显示。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "OK",
+			"翻译": "正常",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "optional",
+			"翻译": "可选",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "or",
+			"翻译": "或",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Registry",
+			"翻译": "仓库",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Remote stack path set on this environment:",
+			"翻译": "在此环境上设置的远程应用栈路径:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Remove image",
+			"翻译": "移除镜像",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Removing...",
+			"翻译": "正在移除...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Reset",
+			"翻译": "重置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Scan",
+			"翻译": "扫描",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Schedules",
+			"翻译": "计划",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Secrets are never written to disk and are injected via shell environment when the stack starts.",
+			"翻译": "机密绝不会写入磁盘，而是在应用栈启动时通过 shell 环境变量注入。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Shell",
+			"翻译": "终端",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Status",
+			"翻译": "状态",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "syntax.\n\t\t\t\t\t\tTo pass them to containers, reference them in the compose file's",
+			"翻译": "语法。\n\t\t\t\t\t\t若要将它们传递给容器，请在 compose 文件的",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Templates",
+			"翻译": "模板",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Use global default",
+			"翻译": "使用全局默认",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "View changelog",
+			"翻译": "查看更新日志",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "vol",
+			"翻译": "存储卷",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Volumes",
+			"翻译": "存储卷",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Weekly",
+			"翻译": "每周",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": ", in the stack's environment. It is",
+			"翻译": "，在应用栈的环境中。它是",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": ", never bare",
+			"翻译": "，切勿使用裸标签",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": ", set it\n\t\t\t\t\t\t\t\t\t\t\t\tunder",
+			"翻译": "，请在此设置\n\t\t\t\t\t\t\t\t\t\t\t\t位于",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": ", you'll be told about:",
+			"翻译": "，你将收到关于以下内容的通知:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": ". If the\n\t\t\t\t\t\t\t\t\t\t\t\tagent uses a custom",
+			"翻译": "。如果\n\t\t\t\t\t\t\t\t\t\t\t\t代理使用了自定义",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": ". Reselect a provider to keep them.",
+			"翻译": "。重新选择提供商以保留它们。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "...and",
+			"翻译": "...以及",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": ".env",
+			"翻译": ".env",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "(a personal access token, no scopes needed)\n\t\t\t\t\t\t\t\t\tto raise the limit from 60 to 5000 requests/hour.",
+			"翻译": "(个人访问令牌，无需任何权限作用域)\n\t\t\t\t\t\t\t\t\t以将限制从每小时 60 次提升至 5000 次请求。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "(not the default",
+			"翻译": "(非默认",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": ") to enable newer-version detection.",
+			"翻译": ") 以启用新版本检测。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "), also detect\n\t\t\t\twhen a newer version is published. Advisory only.",
+			"翻译": ")，同时在新版本发布时进行检测。仅供参考建议。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "). Set the environment's stack path (Environments > edit > Remote stack path for backup), then cancel and re-configure this backup.",
+			"翻译": ")。请设置该环境的应用栈路径（环境 > 编辑 > 用于备份的远程应用栈路径），然后取消并重新配置此备份。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "A backup can't be created until this is fixed - the same helper container captures the stack files.",
+			"翻译": "修复此问题前无法创建备份 — 相同的辅助容器负责捕获应用栈文件。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "A local-path repo only works if this environment's Docker daemon is on the same host as Dockhand.",
+			"翻译": "本地路径仓库仅在此环境的 Docker 守护进程与 Dockhand 位于同一宿主机时可用。",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "A newer version shows as a badge on the container — it is",
+			"翻译": "较新版本会在容器上显示为徽标 — 它是",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Add",
+			"翻译": "添加",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Add missing:",
+			"翻译": "添加缺失的:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Add your first variable",
+			"翻译": "添加你的第一个变量",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "All containers are up to date",
+			"翻译": "所有容器均为最新",
+			"kind": "str",
+			"context": "call:toast.success",
+			"n": 1
+		},
+		{
+			"原文": "All timezones",
+			"翻译": "所有时区",
+			"kind": "attr",
+			"attr": "heading",
+			"context": "attr:heading",
+			"n": 1
+		},
+		{
+			"原文": "always kept",
+			"翻译": "始终保留",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Animate icons",
+			"翻译": "图标动效",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "any newer version, even a different flavor — noisier",
+			"翻译": "任何新版本，即使风格不同 — 提示较多",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Apply",
+			"翻译": "应用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "at",
+			"翻译": "于",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Audit log",
+			"翻译": "审计日志",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "auth",
+			"翻译": "认证",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Backup all files (",
+			"翻译": "备份所有文件 (",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Backup all volumes (",
+			"翻译": "备份所有存储卷 (",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Backup failed",
+			"翻译": "备份失败",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "below",
+			"翻译": "下方",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "bind mount",
+			"翻译": "绑定挂载",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "block - reference the variable there with",
+			"翻译": "块 — 在其中引用该变量，使用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "blocked",
+			"翻译": "已阻止",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Blocked",
+			"翻译": "已阻止",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "bug-fix only →",
+			"翻译": "仅问题修复 →",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Cancelled",
+			"翻译": "已取消",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "captured as a",
+			"翻译": "捕获为",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Captured from the host at",
+			"翻译": "从宿主机捕获于",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "changed ·",
+			"翻译": "已变更 ·",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Check for available updates",
+			"翻译": "检查可用更新",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Check for newer version tags",
+			"翻译": "检查新版本标签",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Checking",
+			"翻译": "检查中",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Clear all variables?",
+			"翻译": "清空所有变量？",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Click for release notes. Never auto-applied.",
+			"翻译": "点击查看发布说明。绝不自动应用。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Collapse sidebar",
+			"翻译": "折叠侧边栏",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Collapse sidebar",
+			"翻译": "折叠侧边栏",
+			"kind": "attr",
+			"attr": "aria-label",
+			"context": "attr:aria-label",
+			"n": 1
+		},
+		{
+			"原文": "Colored grid buttons",
+			"翻译": "彩色网格按钮",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Column settings",
+			"翻译": "列设置",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Columns",
+			"翻译": "列",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Command Palette",
+			"翻译": "命令面板",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Commit:",
+			"翻译": "提交:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Common",
+			"翻译": "通用",
+			"kind": "attr",
+			"attr": "heading",
+			"context": "attr:heading",
+			"n": 1
+		},
+		{
+			"原文": "Completed:",
+			"翻译": "已完成:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Compose stacks",
+			"翻译": "Compose 应用栈",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Compose stacks",
+			"翻译": "Compose 应用栈",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Configure",
+			"翻译": "配置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Consider",
+			"翻译": "建议",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Containers",
+			"翻译": "容器",
+			"kind": "attr",
+			"attr": "heading",
+			"context": "attr:heading",
+			"n": 1
+		},
+		{
+			"原文": "Containers",
+			"翻译": "容器",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Contents are captured in the snapshot, but bind sources are host paths. Restoring to a different environment requires those exact paths on the target host — otherwise services start with empty mounts.",
+			"翻译": "快照中会捕获内容，但绑定源是宿主机路径。恢复到不同环境时需要在目标宿主机上具备完全相同的路径 — 否则服务将以空挂载启动。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "cores",
+			"翻译": "核心",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Couldn't check",
+			"翻译": "无法检查",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Critical",
+			"翻译": "严重",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Customize menu",
+			"翻译": "自定义菜单",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Customize menu",
+			"翻译": "自定义菜单",
+			"kind": "attr",
+			"attr": "aria-label",
+			"context": "attr:aria-label",
+			"n": 1
+		},
+		{
+			"原文": "Daemon hostname / IP",
+			"翻译": "守护进程主机名 / IP",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Dark theme",
+			"翻译": "深色主题",
+			"kind": "attr",
+			"attr": "heading",
+			"context": "attr:heading",
+			"n": 1
+		},
+		{
+			"原文": "Dark theme",
+			"翻译": "深色主题",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Dashboard",
+			"翻译": "仪表盘",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "DataGrid context not found. Ensure component is used within a DataGrid.",
+			"翻译": "未找到 DataGrid 上下文。请确保组件在 DataGrid 内部使用。",
+			"kind": "str",
+			"context": "new:Error",
+			"n": 1
+		},
+		{
+			"原文": "defined",
+			"翻译": "已定义",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Detail",
+			"翻译": "详情",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "detected",
+			"翻译": "已检测到",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Dismiss all update indicators",
+			"翻译": "忽略所有更新提示",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Dockhand has been updated to",
+			"翻译": "Dockhand 已更新至",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Dockhand Logo",
+			"翻译": "Dockhand 标志",
+			"kind": "attr",
+			"attr": "alt",
+			"context": "attr:alt",
+			"n": 1
+		},
+		{
+			"原文": "does not match where the data volume is mounted on the host. Fix it, then cancel and re-configure this backup.",
+			"翻译": "与数据卷在宿主机上的挂载位置不匹配。请修复后取消并重新配置此备份。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "done",
+			"翻译": "完成",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Done",
+			"翻译": "完成",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Downloaded:",
+			"翻译": "已下载:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Drag to reorder (or use arrow keys)",
+			"翻译": "拖拽重新排序（或使用方向键）",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Drag to reposition. Use the slider to zoom.",
+			"翻译": "拖拽调整位置，使用滑块缩放。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Duration",
+			"翻译": "时长",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Editor font",
+			"翻译": "编辑器字体",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Enter an image name to start pulling",
+			"翻译": "输入镜像名称开始拉取",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Enterprise",
+			"翻译": "企业版",
+			"kind": "attr",
+			"attr": "heading",
+			"context": "attr:heading",
+			"n": 1
+		},
+		{
+			"原文": "Environment click",
+			"翻译": "环境卡片点击跳转",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Environment variables",
+			"翻译": "环境变量",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "error",
+			"翻译": "错误",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "everything, incl. breaking →",
+			"翻译": "全部更新，包括重大变更 →",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Expand sidebar",
+			"翻译": "展开侧边栏",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Expand sidebar",
+			"翻译": "展开侧边栏",
+			"kind": "attr",
+			"attr": "aria-label",
+			"context": "attr:aria-label",
+			"n": 1
+		},
+		{
+			"原文": "Failed",
+			"翻译": "失败",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Failed to get canvas context",
+			"翻译": "获取画布上下文失败",
+			"kind": "str",
+			"context": "new:Error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to load image",
+			"翻译": "加载镜像失败",
+			"kind": "str",
+			"context": "new:Error",
+			"n": 1
+		},
+		{
+			"原文": "Failed to start pull",
+			"翻译": "启动拉取失败",
+			"kind": "str",
+			"context": "new:Error",
+			"n": 1
+		},
+		{
+			"原文": "Font",
+			"翻译": "字体",
+			"kind": "attr",
+			"attr": "heading",
+			"context": "attr:heading",
+			"n": 1
+		},
+		{
+			"原文": "Font",
+			"翻译": "字体",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Font size",
+			"翻译": "字号",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "For a container pinned to a version tag (e.g.",
+			"翻译": "对于固定版本标签的容器（例如",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "for vulnerabilities",
+			"翻译": "是否存在漏洞",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Form view",
+			"翻译": "表单视图",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Format:",
+			"翻译": "格式:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Friday",
+			"翻译": "星期五",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "From env file in repository",
+			"翻译": "来自仓库中的 env 文件",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Full image reference",
+			"翻译": "完整镜像引用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "GitHub's rate limit was hit while fetching release notes. Set a",
+			"翻译": "获取发布说明时触发了 GitHub API 速率限制。请设置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Got it",
+			"翻译": "知道了",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Grid buttons",
+			"翻译": "网格按钮",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Grid font size",
+			"翻译": "网格字号",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Hawser (edge)",
+			"翻译": "Hawser (Edge 代理)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Hawser (standard)",
+			"翻译": "Hawser (标准代理)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "here",
+			"翻译": "此处",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "High",
+			"翻译": "高",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "If this path looks wrong, set",
+			"翻译": "如果此路径不正确，请设置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "image:tag",
+			"翻译": "镜像:标签",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Images",
+			"翻译": "镜像",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Include prereleases",
+			"翻译": "包含预发布版本",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Indentation guides",
+			"翻译": "缩进参考线",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Injected into the container at last deploy — never written to",
+			"翻译": "在上次部署时注入容器 — 从不写入",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "injected on the last deploy but the stack is no longer bound to a provider. The next deploy will drop",
+			"翻译": "在上次部署时注入，但应用栈现已不再绑定到提供商。下次部署将丢弃",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "instead.",
+			"翻译": "代替。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "is a direct\n\t\t\t\t\t\t\t\t\t\t\tenvironment. Backup reads the stack folder from this path on the remote\n\t\t\t\t\t\t\t\t\t\t\tDocker host.",
+			"翻译": "是直连环境。备份将从远程 Docker 宿主机的此路径读取应用栈目录。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "is a floating tag — pin a version tag (e.g.",
+			"翻译": "是浮动标签 — 请固定为特定版本标签（例如",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "is a Hawser\n\t\t\t\t\t\t\t\t\t\t\tenvironment. Backup reads the stack folder from the Hawser agent's stack\n\t\t\t\t\t\t\t\t\t\t\tdirectory on its host.",
+			"翻译": "是 Hawser 环境。备份将从宿主机上 Hawser 代理的应用栈目录中读取应用栈文件夹。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "is a socket\n\t\t\t\t\t\t\t\t\t\t\tenvironment. Backup reads the stack folder from Dockhand's own stack\n\t\t\t\t\t\t\t\t\t\t\tdirectory on this host.",
+			"翻译": "是套接字环境。备份将从本机 Dockhand 自身所在宿主机的应用栈目录中读取应用栈文件夹。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "It defaults to",
+			"翻译": "默认为",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "It is derived from the stack's bind mounts. To set it explicitly, use",
+			"翻译": "根据应用栈的绑定挂载推导得出。若要显式指定，请使用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "label pointing at a GitHub or Gitea/Forgejo repo).",
+			"翻译": "指向 GitHub 或 Gitea/Forgejo 仓库的标签）。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Layer ID",
+			"翻译": "层 ID",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "layers",
+			"翻译": "层",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Light theme",
+			"翻译": "浅色主题",
+			"kind": "attr",
+			"attr": "heading",
+			"context": "attr:heading",
+			"n": 1
+		},
+		{
+			"原文": "Light theme",
+			"翻译": "浅色主题",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Live",
+			"翻译": "实时",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Load",
+			"翻译": "加载",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "loaded",
+			"翻译": "已加载",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Loading release notes...",
+			"翻译": "正在加载发布说明...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Low",
+			"翻译": "低",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Major",
+			"翻译": "主版本",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Match the tag flavor",
+			"翻译": "匹配标签风格",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Medium",
+			"翻译": "中危",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Minor",
+			"翻译": "次版本",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "missing",
+			"翻译": "缺失",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Monday",
+			"翻译": "星期一",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "more",
+			"翻译": "更多",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Move to",
+			"翻译": "移动至",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Name",
+			"翻译": "名称",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "namespace/image:tag",
+			"翻译": "命名空间/镜像:标签",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Navigation",
+			"翻译": "导航",
+			"kind": "attr",
+			"attr": "heading",
+			"context": "attr:heading",
+			"n": 1
+		},
+		{
+			"原文": "needs same host",
+			"翻译": "需要相同宿主机",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "never auto-applied",
+			"翻译": "绝不自动应用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "new ·",
+			"翻译": "新 ·",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "new features too →",
+			"翻译": "包含新特性 →",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "New image tag copied",
+			"翻译": "新镜像标签已复制",
+			"kind": "str",
+			"context": "call:toast.success",
+			"n": 1
+		},
+		{
+			"原文": "New tag with digest copied",
+			"翻译": "新标签与摘要已复制",
+			"kind": "str",
+			"context": "call:toast.success",
+			"n": 1
+		},
+		{
+			"原文": "Newer version available",
+			"翻译": "有可用新版本",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No backup runs yet.",
+			"翻译": "暂无备份运行记录。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No changes recorded",
+			"翻译": "未记录任何更改",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No crop data available",
+			"翻译": "无可用裁剪数据",
+			"kind": "str",
+			"context": "new:Error",
+			"n": 1
+		},
+		{
+			"原文": "No environment variables defined.",
+			"翻译": "未定义环境变量。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No environments",
+			"翻译": "无环境",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No icons found",
+			"翻译": "未找到图标",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No logs available",
+			"翻译": "暂无日志",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No matching environments",
+			"翻译": "无匹配环境",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No results found.",
+			"翻译": "未找到匹配结果。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No secret provider is bound",
+			"翻译": "未绑定机密提供商",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No stack folder found on the host",
+			"翻译": "宿主机上未找到应用栈目录",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No timezone found.",
+			"翻译": "未找到时区。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No vulnerabilities!",
+			"翻译": "未发现漏洞！",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "None",
+			"翻译": "无",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 1
+		},
+		{
+			"原文": "not",
+			"翻译": "非",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Notes from",
+			"翻译": "备注来自",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Off",
+			"翻译": "关闭",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "offline",
+			"翻译": "离线",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "OK",
+			"翻译": "正常",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "On",
+			"翻译": "开启",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "On a socket environment this usually means",
+			"翻译": "在套接字环境中，这通常意味着",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "On Hawser this usually means the agent uses a custom",
+			"翻译": "在 Hawser 环境中，这通常意味着代理使用了自定义的",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Only suggest tags with the same suffix as the one you run — the flavor, like",
+			"翻译": "仅推荐与当前运行标签具有相同后缀的标签 — 即风格，例如",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Open on GitHub",
+			"翻译": "在 GitHub 上打开",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Open terminal",
+			"翻译": "打开终端",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Open the app on",
+			"翻译": "在此环境打开应用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Operation is still running. Cancel and close?",
+			"翻译": "操作仍在进行中。是否取消并关闭？",
+			"kind": "str",
+			"context": "call:confirm",
+			"n": 1
+		},
+		{
+			"原文": "Optional variable (has default)",
+			"翻译": "可选变量（具备默认值）",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Output",
+			"翻译": "输出",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Patch",
+			"翻译": "补丁版本",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Path:",
+			"翻译": "路径:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "pending",
+			"翻译": "等待中",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Pending",
+			"翻译": "等待中",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Preparing to",
+			"翻译": "正在准备",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Probing the host for the stack folder...",
+			"翻译": "正在探测宿主机上的应用栈目录...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Processing",
+			"翻译": "处理中",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Progress",
+			"翻译": "进度",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "pull",
+			"翻译": "拉取",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Pull completed!",
+			"翻译": "拉取完成！",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Pulling layers...",
+			"翻译": "正在拉取镜像层...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Pulling...",
+			"翻译": "正在拉取...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "push",
+			"翻译": "推送",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Push complete!",
+			"翻译": "推送完成！",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Push failed",
+			"翻译": "推送失败",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Ready to push to",
+			"翻译": "准备推送至",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Ready to scan",
+			"翻译": "就绪，等待扫描",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "reference is resolved",
+			"翻译": "引用已解析",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Registry",
+			"翻译": "仓库",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Release notes for these versions aren't available inline.",
+			"翻译": "这些版本的发布说明无法内联显示。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Repo",
+			"翻译": "仓库",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "required",
+			"翻译": "必填",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Required variable defined",
+			"翻译": "必填变量已定义",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "required w/ error",
+			"翻译": "必填且有误",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Reset menu to default order and visibility",
+			"翻译": "重置菜单为默认顺序与可见性",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Reset to defaults",
+			"翻译": "恢复默认设置",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "resolved when written directly in a compose",
+			"翻译": "直接写入 compose 时解析",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Restart",
+			"翻译": "重启",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Retry",
+			"翻译": "重试",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Retry scan",
+			"翻译": "重新扫描",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Run",
+			"翻译": "运行",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Run a backup — its history appears here.",
+			"翻译": "运行一次备份 — 备份历史将显示在此处。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Running",
+			"翻译": "运行中",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Saturday",
+			"翻译": "星期六",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "scan",
+			"翻译": "扫描",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Scan failed",
+			"翻译": "扫描失败",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Scan results",
+			"翻译": "扫描结果",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Scanning for vulnerabilities...",
+			"翻译": "正在扫描漏洞...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Search environments...",
+			"翻译": "搜索环境...",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Search icons...",
+			"翻译": "搜索图标...",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Search timezone...",
+			"翻译": "搜索时区...",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Search...",
+			"翻译": "搜索...",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Secret provider",
+			"翻译": "机密提供商",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Secret value (cannot unhide)",
+			"翻译": "机密值（不可明文查看）",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Select environment",
+			"翻译": "选择环境",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Select registry",
+			"翻译": "选择镜像仓库",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Set the environment's stack path (Environments > edit > Remote stack path for backup), then cancel and re-configure this backup.",
+			"翻译": "设置该环境的应用栈路径（环境 > 编辑 > 用于备份的远程应用栈路径），然后取消并重新配置此备份。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Settings",
+			"翻译": "设置",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Sign out",
+			"翻译": "退出登录",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Sign out",
+			"翻译": "退出登录",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Socket",
+			"翻译": "Socket",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "socket / system path - not backed up",
+			"翻译": "套接字 / 系统路径 - 不进行备份",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Some lines couldn't be parsed:",
+			"翻译": "部分内容无法解析:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Some vulnerabilities found",
+			"翻译": "发现部分漏洞",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Spinners during pulls, scans and updates.",
+			"翻译": "在拉取、扫描和更新过程中显示旋转动画。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Stack files on the host",
+			"翻译": "宿主机上的应用栈文件",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Stacks",
+			"翻译": "应用栈",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Start",
+			"翻译": "启动",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Start scan",
+			"翻译": "开始扫描",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Stop",
+			"翻译": "停止",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "succeeded",
+			"翻译": "成功",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Succeeded",
+			"翻译": "成功",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Sunday",
+			"翻译": "星期日",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Switch environment",
+			"翻译": "切换环境",
+			"kind": "attr",
+			"attr": "heading",
+			"context": "attr:heading",
+			"n": 1
+		},
+		{
+			"原文": "Switch to text view to edit these lines.",
+			"翻译": "切换到文本视图以编辑这些行。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "syntax.\n\t\t\t\t\tTo pass them to containers, reference them in the compose file's",
+			"翻译": "语法。\n\t\t\t\t\t若要将它们传递给容器，请在 compose 文件的",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "tags. Off keeps a stable deployment on\n\t\t\t\t\t\tstable releases.",
+			"翻译": "标签。关闭将保持使用稳定发布版本部署。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "taken",
+			"翻译": "耗时",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Terminal font",
+			"翻译": "终端字体",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Text view (raw .env file)",
+			"翻译": "文本视图（原始 .env 文件）",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "The backup helper can't run on this environment",
+			"翻译": "备份辅助容器无法在此环境运行",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "the provider",
+			"翻译": "提供商",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "These",
+			"翻译": "这些",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "This image doesn't publish release notes Dockhand can read\n\t\t\t\t\t\t\t\t\t(no",
+			"翻译": "此镜像未发布 Dockhand 可读取的发布说明\n\t\t\t\t\t\t\t\t\t(缺少",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Thursday",
+			"翻译": "星期四",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "to",
+			"翻译": "至",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Toggle theme",
+			"翻译": "切换主题",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Trigger",
+			"翻译": "触发器",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Tuesday",
+			"翻译": "星期二",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Unused variable",
+			"翻译": "未使用的变量",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Update anyway",
+			"翻译": "仍然更新",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Update available:",
+			"翻译": "发现可用更新:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "updated",
+			"翻译": "已更新",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Updated",
+			"翻译": "已更新",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Use semantic colors instead of muted gray",
+			"翻译": "使用语义化颜色代替暗灰色",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Value",
+			"翻译": "值",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "versions ahead",
+			"翻译": "个先行版本",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "versions ahead of the tag you run.",
+			"翻译": "个领先于当前运行标签的版本。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Vertical guides showing nesting depth in the code editor.",
+			"翻译": "在代码编辑器中显示表示嵌套深度的垂直对齐线。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "View log",
+			"翻译": "查看日志",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "View logs",
+			"翻译": "查看日志",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "View profile",
+			"翻译": "查看个人资料",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "vulnerabilities",
+			"翻译": "个漏洞",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Vulnerabilities found",
+			"翻译": "发现漏洞",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Wednesday",
+			"翻译": "星期三",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "when Dockhand runs in a container, so it points to where the data volume\n\t\t\t\t\t\t\t\t\t\t\tlives on the host.",
+			"翻译": "当 Dockhand 在容器中运行，以便指向数据卷在宿主机上的实际位置。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Where a tile click goes.",
+			"翻译": "点击环境卡片时的跳转目标。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Where the app opens (on the last-used environment).",
+			"翻译": "打开应用时的落点（最近使用的环境）。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Where this path comes from",
+			"翻译": "此路径的来源",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Which updates to show",
+			"翻译": "显示哪些更新",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Live updates connected",
+			"翻译": "实时更新已连接",
+			"kind": "str",
+			"context": "title"
+		},
+		{
+			"原文": "Live updates disconnected",
+			"翻译": "实时更新已断开",
+			"kind": "str",
+			"context": "title"
+		},
+		{
+			"原文": "Live updates active - grid will auto-refresh",
+			"翻译": "实时更新已激活 - 列表将自动刷新",
+			"kind": "str",
+			"context": "title"
+		},
+		{
+			"原文": "Connecting to live updates...",
+			"翻译": "正在连接实时更新...",
+			"kind": "str",
+			"context": "title"
+		},
+		{
+			"原文": "-alpine",
+			"翻译": "-alpine (Alpine 基础镜像)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "-beta",
+			"翻译": "-beta (公测预览版)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "-ls123",
+			"翻译": "-ls123 (LinuxServer 版本构建)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "-rc",
+			"翻译": "-rc (候选发布版)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "1.2-alpine",
+			"翻译": "1.2-alpine (推荐)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "1.5-alpine",
+			"翻译": "1.5-alpine (推荐)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Azure Key Vault",
+			"翻译": "Azure Key Vault 密钥库",
+			"kind": "attr",
+			"attr": "aria-label",
+			"context": "attr:aria-label",
+			"n": 1
+		},
+		{
+			"原文": "Docker",
+			"翻译": "Docker",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "dockhand",
+			"翻译": "dockhand",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "dockhand",
+			"翻译": "dockhand",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Dockhand",
+			"翻译": "Dockhand 标志",
+			"kind": "attr",
+			"attr": "alt",
+			"context": "attr:alt",
+			"n": 1
+		},
+		{
+			"原文": "fnsys/dockhand:",
+			"翻译": "fnsys/dockhand:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "grype",
+			"翻译": "grype 漏洞扫描器",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "grype",
+			"翻译": "grype 漏洞扫描器",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "KeePassXC",
+			"翻译": "KeePassXC 密码管理器",
+			"kind": "attr",
+			"attr": "aria-label",
+			"context": "attr:aria-label",
+			"n": 1
+		},
+		{
+			"原文": "nginx:latest, ubuntu:22.04, postgres:16",
+			"翻译": "例如 nginx:latest, ubuntu:22.04, postgres:16",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "op://",
+			"翻译": "op:// (1Password 协议)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "org.opencontainers.image.source",
+			"翻译": "org.opencontainers.image.source (开源代码源标签)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "pass://",
+			"翻译": "pass:// (Proton Pass 协议)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Proton Pass",
+			"翻译": "Proton Pass 密码管理器",
+			"kind": "attr",
+			"attr": "aria-label",
+			"context": "attr:aria-label",
+			"n": 1
+		},
+		{
+			"原文": "trivy",
+			"翻译": "trivy 漏洞扫描器",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "trivy",
+			"翻译": "trivy 漏洞扫描器",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "v3.0",
+			"翻译": "v3.0 (规范版本)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		}
+	]
+}

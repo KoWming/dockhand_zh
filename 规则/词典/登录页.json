@@ -1,0 +1,166 @@
+{
+	"scope": "src/routes/login",
+	"entries": [
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		},
+		{
+			"原文": "Authentication code",
+			"翻译": "身份验证码",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Back to login",
+			"翻译": "返回登录",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Continue with",
+			"翻译": "继续使用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Dockhand Docker Management",
+			"翻译": "Dockhand Docker 管理",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Dockhand Logo",
+			"翻译": "Dockhand 标志",
+			"kind": "attr",
+			"attr": "alt",
+			"context": "attr:alt",
+			"n": 1
+		},
+		{
+			"原文": "Enter code",
+			"翻译": "输入验证码",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Enter the 6-digit code from your authenticator app, or use a backup code",
+			"翻译": "输入身份验证器应用中的 6 位验证码,或使用备份代码",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Enter your password",
+			"翻译": "输入密码",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Enter your two-factor authentication code",
+			"翻译": "输入您的双因素验证码",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Enter your username",
+			"翻译": "输入用户名",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "LDAP directory",
+			"翻译": "LDAP 目录",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Local account",
+			"翻译": "本地账号",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Login - Dockhand",
+			"翻译": "登录 - Dockhand",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "or continue with",
+			"翻译": "或使用以下方式登录",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Password",
+			"翻译": "密码",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Sign in to your Dockhand account",
+			"翻译": "登录您的 Dockhand 账号",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Sign in with",
+			"翻译": "登录方式",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Single sign-on",
+			"翻译": "单点登录",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Two-factor authentication required",
+			"翻译": "需要双因素验证",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Username",
+			"翻译": "用户名",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Welcome back",
+			"翻译": "欢迎回来",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		}
+	]
+}

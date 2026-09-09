@@ -1,0 +1,613 @@
+{
+	"scope": "src/routes/logs",
+	"entries": [
+		{
+			"原文": "Select a container to view logs",
+			"翻译": "选择一个容器以查看日志",
+			"kind": "str"
+		},
+		{
+			"原文": "Select a container from the list",
+			"翻译": "从列表中选择一个容器",
+			"kind": "str"
+		},
+		{
+			"原文": "Switch to dark mode",
+			"翻译": "切换至深色模式",
+			"kind": "str"
+		},
+		{
+			"原文": "Switch to light mode",
+			"翻译": "切换至浅色模式",
+			"kind": "str"
+		},
+		{
+			"原文": "Show container name prefix",
+			"翻译": "显示容器名前缀",
+			"kind": "str"
+		},
+		{
+			"原文": "Hide container name prefix",
+			"翻译": "隐藏容器名前缀",
+			"kind": "str"
+		},
+		{
+			"原文": "Show timestamps",
+			"翻译": "显示时间戳",
+			"kind": "str"
+		},
+		{
+			"原文": "Hide timestamps",
+			"翻译": "隐藏时间戳",
+			"kind": "str"
+		},
+		{
+			"原文": "Resume live streaming",
+			"翻译": "恢复实时流式传输",
+			"kind": "str"
+		},
+		{
+			"原文": "Pause live streaming",
+			"翻译": "暂停实时流式传输",
+			"kind": "str"
+		},
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		},
+		{
+			"原文": "px",
+			"翻译": "px",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 8
+		},
+		{
+			"原文": "Clear logs",
+			"翻译": "清空日志",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 4
+		},
+		{
+			"原文": "Copy logs",
+			"翻译": "复制日志",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 4
+		},
+		{
+			"原文": "Download logs",
+			"翻译": "下载日志",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 4
+		},
+		{
+			"原文": "Search...",
+			"翻译": "搜索...",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 4
+		},
+		{
+			"原文": "Toggle auto-scroll",
+			"翻译": "切换自动滚动",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 4
+		},
+		{
+			"原文": "Toggle word wrap",
+			"翻译": "切换自动换行",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 4
+		},
+		{
+			"原文": "Clear",
+			"翻译": "清空",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Connected - Live streaming",
+			"翻译": "已连接 - 实时流式传输",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 3
+		},
+		{
+			"原文": "Connecting...",
+			"翻译": "连接中...",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 3
+		},
+		{
+			"原文": "Connecting...",
+			"翻译": "连接中...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Disconnected",
+			"翻译": "已断开",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "lines",
+			"翻译": "行",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Live",
+			"翻译": "实时",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Number of log lines to load",
+			"翻译": "加载日志行数",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 3
+		},
+		{
+			"原文": "Paused",
+			"翻译": "已暂停",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Refresh logs",
+			"翻译": "刷新日志",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 3
+		},
+		{
+			"原文": "Search logs",
+			"翻译": "搜索日志",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 3
+		},
+		{
+			"原文": "Streaming paused",
+			"翻译": "流式传输已暂停",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 3
+		},
+		{
+			"原文": "1K",
+			"翻译": "1000",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 2
+		},
+		{
+			"原文": "Auto-scroll",
+			"翻译": "自动滚动",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "container",
+			"翻译": "容器",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Favorites",
+			"翻译": "收藏",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Loading logs...",
+			"翻译": "正在加载日志...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Logs",
+			"翻译": "日志",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "Next",
+			"翻译": "下次",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "No logs available",
+			"翻译": "暂无可用日志",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Offline",
+			"翻译": "离线",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Pause",
+			"翻译": "暂停",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Previous",
+			"翻译": "上一个",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "Remove from favorites",
+			"翻译": "从收藏中移除",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "Select for merge",
+			"翻译": "选择以合并查看",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "selected",
+			"翻译": "已选择",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Stream",
+			"翻译": "流式传输",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Time:",
+			"翻译": "时间:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Wrap",
+			"翻译": "自动换行",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Add to favorites",
+			"翻译": "添加到收藏",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "All containers",
+			"翻译": "所有容器",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Apply",
+			"翻译": "应用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Click to reconnect",
+			"翻译": "点击以重新连接",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Close logs",
+			"翻译": "关闭日志",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Close search",
+			"翻译": "关闭搜索",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Close search (Esc)",
+			"翻译": "关闭搜索 (Esc)",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Connecting to log stream...",
+			"翻译": "正在连接到日志流...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "containers logs",
+			"翻译": "个容器的日志",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "current",
+			"翻译": "当前",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Delete group",
+			"翻译": "删除分组",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Disconnected",
+			"翻译": "已断开",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Filter containers...",
+			"翻译": "筛选容器...",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "From",
+			"翻译": "起始",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Group name...",
+			"翻译": "分组名称...",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Grouped",
+			"翻译": "分组视图",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Logs - Dockhand",
+			"翻译": "日志 - Dockhand",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Merge",
+			"翻译": "合并",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Multi",
+			"翻译": "多选模式",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Next match",
+			"翻译": "下一处匹配",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Next match (Enter)",
+			"翻译": "下一处匹配 (Enter)",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Previous match",
+			"翻译": "上一处匹配",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Previous match (Shift+Enter)",
+			"翻译": "上一处匹配 (Shift+Enter)",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Save",
+			"翻译": "保存",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Save group",
+			"翻译": "保存分组",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Saved groups",
+			"翻译": "已保存的分组",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Search logs (Ctrl+F)",
+			"翻译": "搜索日志 (Ctrl+F)",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Select all",
+			"翻译": "全选",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Select containers from the list to view merged logs",
+			"翻译": "从列表中选择容器以查看合并日志",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Single",
+			"翻译": "单选模式",
+			"kind": "str",
+			"context": "prop:label",
+			"n": 1
+		},
+		{
+			"原文": "Terminal below",
+			"翻译": "终端置于底部",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Terminal on side",
+			"翻译": "终端置于侧边",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "To",
+			"翻译": "截止",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Toggle auto-refresh",
+			"翻译": "切换自动刷新",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "total",
+			"翻译": "共计",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		}
+	]
+}

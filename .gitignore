@@ -1,0 +1,30 @@
+# 依赖
+node_modules/
+
+# 上游源码 (CI 自动化拉取，本地开发离线保留，不推送到 GitHub)
+代码/
+
+# 本地汉化产物与构建目录
+output/
+.svelte-kit/
+build/
+
+# 日志与临时调试文件
+*.log
+.tmp*
+.tmp/
+*.tmp
+
+# 本地环境与密钥
+.env
+.env.*
+!.env.example
+data/
+
+# 系统与 IDE
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo

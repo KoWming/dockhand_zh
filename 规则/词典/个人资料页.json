@@ -1,0 +1,597 @@
+{
+	"scope": "src/routes/profile",
+	"entries": [
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		},
+		{
+			"原文": "Creating...",
+			"翻译": "正在创建...",
+			"kind": "str"
+		},
+		{
+			"原文": "Generate token",
+			"翻译": "生成令牌",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 4
+		},
+		{
+			"原文": "Change password",
+			"翻译": "修改密码",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "Password",
+			"翻译": "密码",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 3
+		},
+		{
+			"原文": "1 year",
+			"翻译": "1 年",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "30 days",
+			"翻译": "30 天",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "90 days",
+			"翻译": "90 天",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Custom date",
+			"翻译": "自定义日期",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Disable MFA",
+			"翻译": "禁用 MFA",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Done",
+			"翻译": "完成",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Managed by your SSO provider",
+			"翻译": "由你的 SSO 提供商管理",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Name",
+			"翻译": "名称",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "No expiration",
+			"翻译": "永不过期",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Two-factor authentication",
+			"翻译": "双因素验证",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Account information",
+			"翻译": "账号信息",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Add an extra layer of security",
+			"翻译": "为账号增加一道安全防线",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Admin",
+			"翻译": "管理员",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "API tokens",
+			"翻译": "API 令牌",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Appearance",
+			"翻译": "外观",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Are you sure you want to disable two-factor authentication? This will make your account less secure.",
+			"翻译": "确定要禁用双因素验证吗?这会降低账号的安全性。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Change your password",
+			"翻译": "修改你的密码",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Confirm your password",
+			"翻译": "确认密码",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Copied!",
+			"翻译": "已复制！",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Copy codes",
+			"翻译": "复制备份码",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Copy requires HTTPS",
+			"翻译": "复制功能需要 HTTPS",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Copy this token now. It will not be shown again.",
+			"翻译": "请立即复制此令牌,之后将不再显示。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Create tokens for CI/CD pipelines and scripts",
+			"翻译": "创建用于 CI/CD 流水线和脚本的令牌",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Created",
+			"翻译": "已创建",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Current password",
+			"翻译": "当前密码",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Customize the look of the application",
+			"翻译": "自定义应用外观",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "dh_",
+			"翻译": "dh_",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Disable two-factor authentication",
+			"翻译": "禁用双因素验证",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Disabled",
+			"翻译": "已禁用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Display name",
+			"翻译": "显示名称",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Download",
+			"翻译": "下载",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "e.g., CI/CD pipeline",
+			"翻译": "例如 CI/CD 流水线",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Email",
+			"翻译": "邮箱",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Enable MFA",
+			"翻译": "启用 MFA",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Enabled",
+			"翻译": "已启用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Enter 6-digit code",
+			"翻译": "输入 6 位验证码",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Enter current password",
+			"翻译": "输入当前密码",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Enter display name",
+			"翻译": "输入显示名称",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Enter email",
+			"翻译": "输入邮箱",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Enter new password",
+			"翻译": "输入新密码",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Enter the code from your authenticator app to verify setup",
+			"翻译": "输入身份验证器应用中的验证码以完成设置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Expiration",
+			"翻译": "有效期",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Expired",
+			"翻译": "已过期",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Expires",
+			"翻译": "过期时间",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Failed",
+			"翻译": "失败",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Generate token",
+			"翻译": "生成令牌",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Last login",
+			"翻译": "最近登录",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Last used",
+			"翻译": "最近使用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Loading tokens...",
+			"翻译": "正在加载令牌...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Manage your account settings",
+			"翻译": "管理你的账号设置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "MFA enabled successfully",
+			"翻译": "MFA 已启用",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "MFA is enabled for your account",
+			"翻译": "你的账号已启用 MFA",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "MFA QR Code",
+			"翻译": "MFA 二维码",
+			"kind": "attr",
+			"attr": "alt",
+			"context": "attr:alt",
+			"n": 1
+		},
+		{
+			"原文": "Navigation",
+			"翻译": "导航偏好",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Never",
+			"翻译": "从不",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "New password",
+			"翻译": "新密码",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No API tokens created yet.",
+			"翻译": "尚未创建 API 令牌。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Or enter this code manually:",
+			"翻译": "或手动输入此验证码:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Prefix",
+			"翻译": "前缀",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Profile",
+			"翻译": "个人资料",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Profile - Dockhand",
+			"翻译": "个人资料 - Dockhand",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Profile details",
+			"翻译": "资料详情",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Remove photo",
+			"翻译": "移除头像",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Repeat new password",
+			"翻译": "重复新密码",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Repeat new password",
+			"翻译": "重复新密码",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Revoke token",
+			"翻译": "吊销令牌",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Role",
+			"翻译": "角色",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Save changes",
+			"翻译": "保存更改",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Save these backup codes in a safe place. Each code can only be used once to sign in if you lose access to your authenticator app.",
+			"翻译": "请将这些备份码保存在安全的地方。当你无法使用身份验证器应用时,每个备份码仅可使用一次登录。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Scan this QR code with your authenticator app (Google Authenticator, Authy, etc.)",
+			"翻译": "使用身份验证器应用(Google Authenticator、Authy 等)扫描此二维码",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Security",
+			"翻译": "安全",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Setup MFA",
+			"翻译": "设置 MFA",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Setup two-factor authentication",
+			"翻译": "设置双因素验证",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "User",
+			"翻译": "用户",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Username",
+			"翻译": "用户名",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Verification code",
+			"翻译": "验证码",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Your landing page and environment-click target. Leave on \"Use global default\" to follow the workspace setting.",
+			"翻译": "您的起始着陆页和点击环境时的跳转目标。保持为“使用全局默认”以遵循工作区全局设置。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		}
+	]
+}

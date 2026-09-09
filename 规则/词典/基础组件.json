@@ -1,0 +1,144 @@
+{
+	"scope": "src/lib/components/ui",
+	"entries": [
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		},
+		{
+			"原文": "Select a Docker environment from the dropdown to get started",
+			"翻译": "从下拉列表中选择一个 Docker 环境以开始使用",
+			"kind": "attr",
+			"attr": "description"
+		},
+		{
+			"原文": "Add a Docker environment in Settings to get started",
+			"翻译": "在设置中添加 Docker 环境以开始使用",
+			"kind": "attr",
+			"attr": "description"
+		},
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Copy error",
+			"翻译": "复制错误",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 2
+		},
+		{
+			"原文": "(optional)",
+			"翻译": "(可选)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Copy requires HTTPS",
+			"翻译": "复制功能需要 HTTPS",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Displays the mobile sidebar.",
+			"翻译": "显示移动端侧边栏。",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Go to Settings",
+			"翻译": "前往设置",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Loading snapshots…",
+			"翻译": "正在加载快照…",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No environment configured",
+			"翻译": "未配置环境",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "No environment selected",
+			"翻译": "未选择环境",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "of",
+			"翻译": "/",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "OK",
+			"翻译": "正常",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "repos",
+			"翻译": "个仓库",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Sidebar",
+			"翻译": "侧边栏",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Toggle Sidebar",
+			"翻译": "切换侧边栏",
+			"kind": "attr",
+			"attr": "aria-label",
+			"context": "attr:aria-label",
+			"n": 1
+		},
+		{
+			"原文": "Toggle Sidebar",
+			"翻译": "切换侧边栏",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Toggle Sidebar",
+			"翻译": "切换侧边栏",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		}
+	]
+}

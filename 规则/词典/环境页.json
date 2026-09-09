@@ -1,0 +1,287 @@
+{
+	"scope": "src/routes/environments",
+	"entries": [
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		},
+		{
+			"原文": "-----BEGIN CERTIFICATE-----",
+			"翻译": "-----BEGIN CERTIFICATE-----",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 4
+		},
+		{
+			"原文": "-----BEGIN RSA PRIVATE KEY-----",
+			"翻译": "-----BEGIN RSA PRIVATE KEY-----",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 2
+		},
+		{
+			"原文": "Add environment",
+			"翻译": "添加环境",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "CA certificate",
+			"翻译": "CA 证书",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Client certificate",
+			"翻译": "客户端证书",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Client key",
+			"翻译": "客户端密钥",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Host",
+			"翻译": "主机",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "HTTPS (TLS)",
+			"翻译": "HTTPS (TLS)",
+			"kind": "attr",
+			"attr": "label",
+			"context": "attr:label",
+			"n": 2
+		},
+		{
+			"原文": "HTTPS (TLS)",
+			"翻译": "HTTPS (TLS)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Name",
+			"翻译": "名称",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Parse",
+			"翻译": "解析",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Paste a full Docker URL to auto-fill the fields below",
+			"翻译": "粘贴完整的 Docker URL 以自动填充下方字段",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Port",
+			"翻译": "端口",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Production server",
+			"翻译": "生产服务器",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 2
+		},
+		{
+			"原文": "Protocol",
+			"翻译": "协议",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "Quick URL (optional)",
+			"翻译": "快捷 URL(可选)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "TLS certificates (optional)",
+			"翻译": "TLS 证书(可选)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 2
+		},
+		{
+			"原文": "| Images:",
+			"翻译": "| 镜像:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "192.168.1.100 or docker.example.com",
+			"翻译": "192.168.1.100 或 docker.example.com",
+			"kind": "attr",
+			"attr": "placeholder",
+			"context": "attr:placeholder",
+			"n": 1
+		},
+		{
+			"原文": "Add",
+			"翻译": "添加",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Are you sure you want to delete this environment?",
+			"翻译": "确定要删除此环境吗?",
+			"kind": "str",
+			"context": "call:confirm",
+			"n": 1
+		},
+		{
+			"原文": "Connected",
+			"翻译": "已连接",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Containers:",
+			"翻译": "容器:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Docker:",
+			"翻译": "Docker:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Edge connection (outbound)",
+			"翻译": "Edge 连接(出站)",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Edit environment",
+			"翻译": "编辑环境",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Environments",
+			"翻译": "环境",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "Failed",
+			"翻译": "失败",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Failed to delete environment",
+			"翻译": "删除环境失败",
+			"kind": "str",
+			"context": "call:alert",
+			"n": 1
+		},
+		{
+			"原文": "Host:",
+			"翻译": "主机:",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Loading environments...",
+			"翻译": "正在加载环境...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "No environments found",
+			"翻译": "未找到环境",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Refresh",
+			"翻译": "刷新",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Save",
+			"翻译": "保存",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Test",
+			"翻译": "测试",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Testing connection...",
+			"翻译": "正在测试连接...",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "total",
+			"翻译": "共计",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		}
+	]
+}

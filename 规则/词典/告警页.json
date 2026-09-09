@@ -1,0 +1,37 @@
+{
+	"scope": "src/routes/alerts",
+	"entries": [
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		},
+		{
+			"原文": "Alert configuration coming soon",
+			"翻译": "告警配置即将上线",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		},
+		{
+			"原文": "Alerts",
+			"翻译": "告警",
+			"kind": "attr",
+			"attr": "title",
+			"context": "attr:title",
+			"n": 1
+		},
+		{
+			"原文": "No alerts configured",
+			"翻译": "尚未配置告警",
+			"kind": "text",
+			"context": "svelte:text",
+			"n": 1
+		}
+	]
+}

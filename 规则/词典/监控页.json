@@ -1,0 +1,15 @@
+{
+	"scope": "src/routes/metrics",
+	"entries": [
+		{
+			"原文": "Close",
+			"翻译": "关闭",
+			"kind": "str"
+		},
+		{
+			"原文": "Cancel",
+			"翻译": "取消",
+			"kind": "str"
+		}
+	]
+}
