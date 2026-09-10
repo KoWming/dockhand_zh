@@ -235,10 +235,10 @@ function main() {
 		try {
 			mkdirSync(OUT, { recursive: true });
 			mkdirSync(join(OUT, 'bin'), { recursive: true });
-			for (const e of readdirSync(OUT)) {
-				if (e === 'node_modules' || e === 'bin' || e === '.svelte-kit' || e === 'package-lock.json') continue;
-				rmSync(join(OUT, e), { recursive: true, force: true });
-			}
+				for (const e of readdirSync(OUT)) {
+					if (e === 'node_modules' || e === 'bin' || e === '.svelte-kit' || e === 'package-lock.json' || e === 'BRANCH') continue;
+					rmSync(join(OUT, e), { recursive: true, force: true });
+				}
 		} catch (err) {
 			errors.push(`清理 output 目录失败: ${String(err).split('\n')[0]}`);
 		}
@@ -253,8 +253,11 @@ function main() {
 			writeCount++;
 		}
 
-	// 8. 补全 Tailwind 样式清单
-	genTailwindSources();
+		// 8. 补全 Tailwind 样式清单
+		genTailwindSources();
+
+		// 9. 写入构建分支标识 (避免 shallow clone 时出现孤零零的 HEAD)
+		writeFileSync(join(OUT, 'BRANCH'), 'main\n', 'utf8');
 
 	console.log(`\n🎉 汉化产物生成成功:`);
 	console.log(`  - 累计修改文件: ${writeCount} 个`);
